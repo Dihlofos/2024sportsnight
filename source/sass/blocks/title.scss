@@ -1,0 +1,27 @@
+.title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.6rem 1rem 2rem;
+  font-family: $pattern;
+  font-weight: 500;
+  font-size: 6rem;
+  line-height: 0.95;
+  color: $purple;
+  text-transform: uppercase;
+  margin: 0 0 8.4rem;
+  background-color: $white;
+  min-width: 57.3rem;
+  border-radius: 43px;
+  text-align: center;
+
+  &--white {
+    color: $white;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+}

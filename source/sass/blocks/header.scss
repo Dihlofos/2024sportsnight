@@ -1,0 +1,96 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 60;
+  padding-top: 2rem;
+
+  @media (max-width: $tablet) {
+    padding-bottom: 1.5rem;
+  }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 2.2rem;
+  }
+
+
+  .container {
+    max-width: 127.5rem;
+  }
+
+  &__nav {
+    position: relative;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    background-color: $white;
+    height: 6.5rem;
+    border-radius: 32.5px;
+    padding: 1.6rem 4.5rem 1.5rem 5.8rem;
+  }
+
+  &__logos {
+    position: relative;
+    display: flex;
+    gap: 3.4rem;
+    height: 100%;
+    z-index: 2;
+
+    @media (max-width: $tablet) {
+      align-self: center;
+      gap: 1.8rem;
+      padding: 1.5rem 0 0 0px;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 2rem;
+      padding: 2rem .6rem 0 0;
+    }
+  }
+
+  &__logo {
+    transition: 0.2s color ease-in;
+    height: 100%;
+    width: auto;
+
+    img {
+      height: 100%;
+      width: auto;
+
+      @media (max-width: $tablet) {
+        width: 7.4rem;
+      }
+
+      @media (max-width: $mobile) {
+        width: 6.7rem;
+      }
+    }
+
+    svg {
+      fill: currentColor;
+    }
+
+    &:hover {
+      color: $purple;
+    }
+
+    &:nth-child(2) {
+      @media (max-width: $mobile) {
+        img {
+          width: 7.7rem;
+        }
+
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,163 @@
+.hero {
+  margin: 0 0 19.7rem;
+  &__main {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 20rem;
+    margin-top: 15.3rem;
+    margin-bottom: 9rem;
+    max-width: 95.7rem;
+  }
+
+  &__name {
+    @include pattern(12.7rem);
+    text-align: center;
+  }
+
+  &__decor {
+    position: absolute;
+
+    &--left-top {
+      top: -5.8rem;
+      left: 1.7rem;
+    }
+
+    &--right-top {
+      top: -8.9rem;
+      right: -11.9rem;
+    }
+
+    &--left-bottom {
+      bottom: 3.9rem;
+      left: -28.5rem;
+    }
+
+    &--bottom {
+      bottom: 0;
+      left: 22rem;
+    }
+
+    &--right-bottom {
+      bottom: -9.9rem;
+      right: -25.9rem;
+    }
+
+    &--about-left-top {
+      top: 3.2rem;
+      left: -12rem;
+    }
+
+    &--about-left-bottom {
+      bottom: -8.5rem;
+      left: -17.5rem;
+    }
+
+    &--about-right-bottom {
+      bottom: -9.4rem;
+      right: -30.5rem;
+    }
+
+    &--action-left-bottom {
+      bottom: -2.4rem;
+      left: 4.4rem;
+    }
+
+    &--action-left-top {
+      top: -2.9rem;
+      left: 27.6rem;
+    }
+
+    &--action-right-top {
+      top: -3.6rem;
+      right: 24rem;
+    }
+
+    &--action-right-bottom {
+      bottom: -3rem;
+      right: 1.6rem;
+    }
+  }
+
+  &__date-time {
+    position: absolute;
+    right: 7.6rem;
+    bottom: 9.8rem;
+  }
+
+  &__title {
+    font-family: $pattern;
+    font-size: 12.7rem;
+    color: $white;
+    line-height: 96%;
+    font-weight: 500;
+  }
+
+  &__about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 86.1rem;
+    margin: 0 auto 19.8rem;
+  }
+
+  &__action {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: $pink;
+
+    .container {
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  &__action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 44.4rem;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    margin: 0 auto;
+    border-radius: 33px;
+    background-color: $white;
+    font-size: 3.5rem;
+    height: 6.6rem;
+    gap: 2rem;
+    color: $purple;
+  }
+
+  &__desc {
+    text-align: center;
+    color: $white;
+    font-size: 2.5rem;
+    line-height: 1.2;
+
+    &--par1 {
+      font-weight: 500;
+      margin: 0 0 6.4rem;
+      letter-spacing: 0.03rem;
+    }
+
+    &--par2 {
+      font-weight: 500;
+      margin: 0 0 2.5rem;
+    }
+
+    &--par3 {
+      @include pattern(4.5rem);
+      margin: 0 0 1.5rem;
+      opacity: 0.8;
+    }
+    &--par4 {
+      max-width: 60rem
+    }
+  }
+
+
+}

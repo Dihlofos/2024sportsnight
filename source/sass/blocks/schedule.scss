@@ -1,0 +1,132 @@
+.schedule {
+  margin-top: 17rem;
+  margin-bottom: 40rem; // change;
+
+  .container {
+    max-width: 124rem !important;
+
+    &.mini {
+      max-width: 114rem !important;;
+    }
+  }
+
+
+  .title {
+    margin-left: 14.2rem;
+    margin-bottom: 13rem;
+  }
+
+  &__header {
+    display: flex;
+    gap: 5.8rem;
+    margin: 0 0 16.3rem;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: flex-end;
+    width: 28rem;
+    margin-top: -4.9rem;
+
+    img {
+      width: 47rem;
+      height: auto;
+      max-width: unset;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    top: -5rem;
+    right: -5rem;
+  }
+
+  &__links {
+    max-width: 86rem;
+  }
+
+  &__link {
+    @include pattern(4.3rem);
+    display: inline-flex;
+    position: relative;
+    gap: 3.6rem;
+    text-decoration: none;
+    background-color: $green;
+    border-radius: 7.46rem;
+    padding: 1rem 4.5rem 1.4rem 3.7rem;
+    line-height: 0.9;
+    height: 5.5rem;
+    transition: background-image 0.2s ease-in;
+    overflow: hidden;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+
+    }
+
+    span {
+      margin-top: -0.5rem;
+    }
+
+    img, span {
+      z-index: 5;
+    }
+
+    &--parks {
+      margin-left: 4rem;
+      margin: 0 0 2.5rem 10.3rem;
+
+      &:before {
+        background-image: url('../img/backgrounds/parks.png');
+      }
+
+
+
+    }
+
+    &--objects {
+      background-color: $pink;
+      margin: 0 0 2.5rem 20.3rem;
+
+      &:before {
+        background-image: url('../img/backgrounds/objects.png');
+      }
+    }
+
+    &--centers {
+      background-color: $red;
+      margin: 0 0 2.5rem;
+      padding: .8rem 2rem .9rem 3.7rem;
+      width: 100%;
+
+      &:before {
+        background-image: url('../img/backgrounds/centers.png');
+      }
+    }
+
+    &--city {
+      background-color: $orange;
+      margin-left: 10.5rem;
+
+      &:before {
+        background-image: url('../img/backgrounds/city.png');
+      }
+    }
+
+
+  }
+
+}

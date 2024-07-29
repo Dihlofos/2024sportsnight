@@ -1,0 +1,99 @@
+.location {
+  color: $white;
+
+  &--green {
+    background-color: $green;
+  }
+
+  &__title {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $white;
+    height: 8.4rem;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+
+    .location--green & {
+      color: $green;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+
+      &:first-child {
+        left: -4.5rem;
+      }
+
+      &:last-child {
+        right: -4.5rem;
+      }
+    }
+
+    span {
+      display: block;
+      margin-top: -1rem;
+      @include pattern(5.9rem);
+      color: inherit;
+    }
+  }
+
+  &__thumbs-container {
+    position: relative;
+    padding: 0 5.7rem 0;
+  }
+
+  &__main {
+    padding-top: 7.5rem;
+
+  }
+
+  &__thumbs-list {
+    display: flex;
+  }
+
+  &__thumb {
+    @include pattern(3.4rem);
+    padding: 0.8rem 3rem 1.3rem;
+    width: auto;
+    border-radius: 42px;
+
+    &--parks {
+      color: $red;
+      background-color: $white;
+
+      &.swiper-slide-thumb-active {
+        color: $white;
+        background-color: $red;
+      }
+    }
+
+    span {
+      margin-top: -0.1rem;
+    }
+
+
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 1.7rem;
+    z-index: 6;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    &--prev {
+      left: 1rem;
+    }
+
+    &--next {
+      right: 1rem;
+    }
+  }
+
+}
