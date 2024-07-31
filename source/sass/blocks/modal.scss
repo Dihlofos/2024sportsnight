@@ -1,0 +1,65 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($black, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+
+  display: none;
+
+  &.show {
+    display: flex;
+  }
+
+  &__title {
+    @include pattern(2.3rem);
+    line-height: 1.1;
+  }
+
+  &__info {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+  }
+
+  &__content {
+    position: relative;
+    background-color: $red;
+    max-width: 91.7rem;
+    padding: 2.7rem 3.7rem 4rem 4rem;
+    border-radius: 30px;
+    z-index: 101;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 0 2rem;
+  }
+
+  &__close {
+    position: absolute;
+    top: 2.3rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+  }
+
+
+}

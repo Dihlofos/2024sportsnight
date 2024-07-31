@@ -1,8 +1,50 @@
 .location {
   color: $white;
+  padding-bottom: 8.8rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  box-shadow: 0px 14.769px 16.739px rgba(0, 0, 0, 0.15);
+
 
   &--green {
     background-color: $green;
+  }
+
+  &--orange {
+    background-color: $orange;
+  }
+
+  &--pink {
+    background-color: $pink;
+  }
+
+  &--red {
+    background-color: $red;
+  }
+
+  &__decor {
+    position: absolute;
+
+    &--volan {
+      bottom: 42rem;
+      left: -25.3rem;
+    }
+
+    &--tree {
+      bottom: 18.9rem;
+      right: -25rem;
+    }
+
+    &--bee {
+      bottom: 42rem;
+      left: -26.3rem;
+    }
+
+    &--skate {
+      bottom: 24.9rem;
+      right: -24.7rem;
+    }
   }
 
   &__title {
@@ -19,6 +61,18 @@
 
     .location--green & {
       color: $green;
+    }
+
+    .location--orange & {
+      color: $orange;
+    }
+
+    .location--pink & {
+      color: $pink;
+    }
+
+    .location--red & {
+      color: $red;
     }
 
     img {
@@ -61,14 +115,50 @@
     padding: 0.8rem 3rem 1.3rem;
     width: auto;
     border-radius: 42px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
-    &--parks {
+    .location--green & {
       color: $red;
       background-color: $white;
 
+      &:hover,
       &.swiper-slide-thumb-active {
         color: $white;
         background-color: $red;
+      }
+    }
+
+    .location--orange & {
+      color: $pink;
+      background-color: $white;
+
+      &:hover,
+      &.swiper-slide-thumb-active {
+        color: $white;
+        background-color: $pink;
+      }
+    }
+
+    .location--pink & {
+      color: $green;
+      background-color: $white;
+
+      &:hover,
+      &.swiper-slide-thumb-active {
+        color: $white;
+        background-color: $green;
+      }
+    }
+
+    .location--red & {
+      color: $orange;
+      background-color: $white;
+
+      &:hover,
+      &.swiper-slide-thumb-active {
+        color: $white;
+        background-color: $orange;
       }
     }
 
@@ -86,6 +176,11 @@
     border: none;
     background: none;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &.swiper-button-disabled {
+      cursor: auto;
+    }
 
     &--prev {
       left: 1rem;
@@ -94,6 +189,182 @@
     &--next {
       right: 1rem;
     }
+
+    .location--green & {
+      &:hover {
+          svg path {
+            fill: $red !important;
+          }
+        }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 7.6rem 5rem 8.5rem;
+    align-items: flex-start;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.3rem;
+  }
+
+  &__card {
+    width: 29.4rem;
+    min-height: 31.3rem;
+    background-color: $white;
+    padding: 1.8rem 2.6rem 2.6rem 2.2rem;
+    border-radius: 30px;
+    color: $black;
+    box-shadow: 0px 14.052px 15.926px rgba(0, 0, 0, 0.15);
+
+    &--small {
+      min-height: 23.9rem;
+    }
+  }
+
+  &__card-header {
+    margin: 0 0 2.8rem;
+  }
+
+  &__link {
+    &:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &__card-description {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 2.4rem;
+
+    p {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin: 0 0 2.2rem;
+      }
+
+    }
+  }
+
+  &__card-name {
+    @include pattern(2.3rem);
+    line-height: 1.1;
+
+    .location--green & {
+      color: $red;
+    }
+
+    .location--orange & {
+      color: $pink;
+    }
+
+    .location--pink & {
+      color: $green;
+    }
+
+    .location--red & {
+      color: $orange;
+    }
+  }
+
+  &__card-time {
+    @include pattern(2.3rem);
+
+    .location--green & {
+      color: $orange;
+    }
+
+    .location--orange & {
+      color: $green;
+    }
+
+    .location--pink & {
+      color: $pink;
+    }
+
+    .location--red & {
+      color: $red;
+    }
+
+  }
+
+  &__map {
+    flex-shrink: 0;
+    width: 34rem;
+    height: 31.3rem;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  &__subtitle {
+    @include pattern(3.4rem);
+    margin: 0 0 4rem 6rem;
+  }
+
+  &__stars {
+    position: relative;
+
+    .swiper {
+      margin: 0 6rem;
+    }
+
+    .location__arrow {
+      top: 9rem;
+
+      &.swiper-button-disabled {
+        display: none;
+      }
+    }
+  }
+
+  &__star-image {
+    position: relative;
+    margin: 0 0 1.8rem;
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      content: '';
+      width: 4.7rem;
+      height: 4.7rem;
+      background-size: cover;
+    }
+
+    .location--green &:after {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24.2285" cy="23.9424" r="23.5" fill="%23D62B58"/><path d="M40.6304 20.3982C40.6341 17.9012 39.7822 15.4043 38.0652 13.3597C36.576 11.5869 34.4749 10.4835 32.1714 10.4431C29.6392 10.399 27.1672 12.2995 25.0793 13.5556C22.6714 12.1065 20.1758 10.0715 17.1993 10.5411C14.7706 10.9243 12.7034 12.4349 11.4015 14.5371C9.72689 17.2424 9.27128 20.692 10.2079 23.7488C11.4044 27.6536 14.7311 30.4684 17.7462 32.9356C18.4984 33.5511 25.165 39.5457 25.1866 39.5265C28.3787 36.6031 31.633 33.7403 34.7376 30.72C37.7743 27.765 40.6229 24.9906 40.6304 20.3982Z" fill="white"/></svg>');
+    }
+
+    .location--orange &:after {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="47" height="48" viewBox="0 0 47 48" fill="none"><circle cx="23.5" cy="23.9424" r="23.5" fill="%23EC6198"/><path d="M39.9019 20.3982C39.9056 17.9012 39.0537 15.4043 37.3367 13.3597C35.8475 11.5869 33.7464 10.4835 31.4429 10.4431C28.9107 10.399 26.4387 12.2995 24.3508 13.5556C21.9428 12.1065 19.4473 10.0715 16.4708 10.5411C14.0421 10.9243 11.9749 12.4349 10.673 14.5371C8.99837 17.2424 8.54276 20.692 9.4794 23.7488C10.6759 27.6536 14.0026 30.4684 17.0177 32.9356C17.7699 33.5511 24.4365 39.5457 24.4581 39.5265C27.6502 36.6031 30.9045 33.7403 34.009 30.72C37.0458 27.765 39.8943 24.9906 39.9019 20.3982Z" fill="white"/></svg>');
+    }
+
+    .location--pink &:after {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24.2285" cy="23.9424" r="23.5" fill="%2344B27F"/><path d="M40.6304 20.3982C40.6341 17.9012 39.7822 15.4043 38.0652 13.3597C36.576 11.5869 34.4749 10.4835 32.1714 10.4431C29.6392 10.399 27.1672 12.2995 25.0793 13.5556C22.6714 12.1065 20.1758 10.0715 17.1993 10.5411C14.7706 10.9243 12.7034 12.4349 11.4015 14.5371C9.72689 17.2424 9.27128 20.692 10.2079 23.7488C11.4044 27.6536 14.7311 30.4684 17.7462 32.9356C18.4984 33.5511 25.165 39.5457 25.1866 39.5265C28.3787 36.6031 31.633 33.7403 34.7376 30.72C37.7743 27.765 40.6229 24.9906 40.6304 20.3982Z" fill="white"/></svg>');
+    }
+
+    .location--red &:after {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="47" height="48" viewBox="0 0 47 48" fill="none"><circle cx="23.5" cy="23.9424" r="23.5" fill="%23F8A917"/><path d="M39.9019 20.3982C39.9056 17.9012 39.0537 15.4043 37.3367 13.3597C35.8475 11.5869 33.7464 10.4835 31.4429 10.4431C28.9107 10.399 26.4387 12.2995 24.3508 13.5556C21.9428 12.1065 19.4473 10.0715 16.4708 10.5411C14.0421 10.9243 11.9749 12.4349 10.673 14.5371C8.99837 17.2424 8.54276 20.692 9.4794 23.7488C10.6759 27.6536 14.0026 30.4684 17.0177 32.9356C17.7699 33.5511 24.4365 39.5457 24.4581 39.5265C27.6502 36.6031 30.9045 33.7403 34.009 30.72C37.0458 27.765 39.8943 24.9906 39.9019 20.3982Z" fill="white"/></svg>');
+    }
+  }
+
+  &__star-name {
+    @include pattern(2.4rem);
+    text-align: center;
+    margin: 0 0 0.3rem;
+  }
+
+  &__star-descr {
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-align: center;
+
   }
 
 }

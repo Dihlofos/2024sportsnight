@@ -1,9 +1,10 @@
 .schedule {
   margin-top: 17rem;
-  margin-bottom: 40rem; // change;
+  margin-bottom: 17.5rem;
 
   .container {
     max-width: 124rem !important;
+    position: relative;
 
     &.mini {
       max-width: 114rem !important;;
@@ -26,7 +27,7 @@
     display: flex;
     justify-content: flex-end;
     width: 28rem;
-    margin-top: -4.9rem;
+    margin-top: -7.9rem;
 
     img {
       width: 47rem;
@@ -37,12 +38,20 @@
 
   &__decor {
     position: absolute;
-    top: -5rem;
-    right: -5rem;
+    top: 4rem;
+    right: 3.5rem;
   }
 
   &__links {
     max-width: 86rem;
+  }
+
+  &__location {
+
+    &:not(:last-child) {
+      margin: 0 0 12rem;
+    }
+
   }
 
   &__link {
