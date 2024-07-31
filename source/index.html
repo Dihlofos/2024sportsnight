@@ -226,8 +226,8 @@
             </div>
           </div>
         </section>
-        <section class="marquee">
-          <div class="marquee__block">
+        <section class="marquee" id="marquee-one">
+          <div class="marquee__block" id="marquee-one-right">
             <img width="676" height="64" src="/img/marquee/orange.svg" class="orange">
             <img width="676" height="64" src="/img/marquee/red.svg" class="red">
             <img width="676" height="64" src="/img/marquee/orange.svg" class="orange">
@@ -235,7 +235,7 @@
             <img width="676" height="64" src="/img/marquee/orange.svg" class="orange">
             <img width="676" height="64" src="/img/marquee/red.svg" class="red">
           </div>
-          <div class="marquee__block">
+          <div class="marquee__block" id="marquee-one-left">
             <img width="676" height="64" src="/img/marquee/pink.svg" class="pink">
             <img width="676" height="64" src="/img/marquee/green.svg" class="green">
             <img width="676" height="64" src="/img/marquee/pink.svg" class="pink">
@@ -1008,7 +1008,33 @@
                               <p>Крутите педали под зажигательный диджей-сет в стильной локации</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <div class="locations__block-link dropdown js-dropdown">
+                                <button class="dropdown__trigger js-dropdown-trigger button button--red">
+                                  Время сеансов
+                                  <svg class="js-dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M7.71109 0.672999V14.0951M7.71109 14.0951L14.4221 7.38403M7.71109 14.0951L1.00005 7.38403" stroke="white" stroke-width="1.96924"/>
+                                  </svg>
+                                </button>
+                                <div class="dropdown__content">
+                                  <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                      <a href="https://disk.yandex.ru/d/dcei_QQm7AsSBQ" class="dropdown__link" target="_blank">
+                                        <span>19:00</span>
+                                      </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                      <a href="https://disk.yandex.ru/d/aSP1y-PPogvCbg" class="dropdown__link" target="_blank">
+                                        <span>20:00</span>
+                                      </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                      <a href="https://disk.yandex.ru/d/snWwRs-_cvuMUg" class="dropdown__link" target="_blank">
+                                        <span>21:00</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1019,7 +1045,33 @@
                               <p>Крутите педали под зажигательный диджей-сет в стильной локации</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <div class="locations__block-link dropdown js-dropdown">
+                                <button class="dropdown__trigger js-dropdown-trigger button button--red">
+                                  Время сеансов
+                                  <svg class="js-dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M7.71109 0.672999V14.0951M7.71109 14.0951L14.4221 7.38403M7.71109 14.0951L1.00005 7.38403" stroke="white" stroke-width="1.96924"/>
+                                  </svg>
+                                </button>
+                                <div class="dropdown__content">
+                                  <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                      <a href="https://disk.yandex.ru/d/dcei_QQm7AsSBQ" class="dropdown__link" target="_blank">
+                                        <span>19:00</span>
+                                      </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                      <a href="https://disk.yandex.ru/d/aSP1y-PPogvCbg" class="dropdown__link" target="_blank">
+                                        <span>20:00</span>
+                                      </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                      <a href="https://disk.yandex.ru/d/snWwRs-_cvuMUg" class="dropdown__link" target="_blank">
+                                        <span>21:00</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1181,8 +1233,8 @@
             </div>
           </div>
         </section>
-        <section class="marquee">
-          <div class="marquee__block">
+        <section class="marquee" id="marquee-two">
+          <div class="marquee__block" id="marquee-two-right">
             <img width="676" height="64" src="/img/marquee/orange.svg" class="orange">
             <img width="676" height="64" src="/img/marquee/red.svg" class="red">
             <img width="676" height="64" src="/img/marquee/orange.svg" class="orange">
@@ -1190,7 +1242,7 @@
             <img width="676" height="64" src="/img/marquee/orange.svg" class="orange">
             <img width="676" height="64" src="/img/marquee/red.svg" class="red">
           </div>
-          <div class="marquee__block">
+          <div class="marquee__block" id="marquee-two-left">
             <img width="676" height="64" src="/img/marquee/pink.svg" class="pink">
             <img width="676" height="64" src="/img/marquee/green.svg" class="green">
             <img width="676" height="64" src="/img/marquee/pink.svg" class="pink">
@@ -1405,6 +1457,10 @@
 
         </a>
     </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <script src="js/vendor.js"></script>
     <script src="js/main8.js"></script>
   </body>

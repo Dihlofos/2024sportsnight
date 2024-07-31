@@ -6,9 +6,10 @@
   }
 
   &__trigger {
+    display: flex;
+    gap: 1rem;
+    padding: 0.9rem 1rem 1rem 2rem;
     position: relative;
-    background-color: $white;
-    color: $red;
     cursor: pointer;
     z-index: 5;
     transition: 0.2s box-shadow ease-in-out;
@@ -26,34 +27,31 @@
       }
     }
 
-
-
-    .dropdown.open & {
-      background-color: $grey;
+    &:hover {
+      svg path {
+        stroke: $black;
+      }
     }
 
     svg {
-      transform: rotate(90deg);
+      pointer-events: none;
+      transition: 0.2s all ease-in-out;
     }
 
-    &:hover {
-      background-color: $white;
-      color: $red;
+    .open & {
+      svg {
+        transform: rotate(180deg);
+      }
     }
+
+
   }
 
   &__list {
     list-style: none;
-    padding: 6rem 0 1.5rem;
+    padding: 3.8rem 2.1rem 1.5rem;
     margin: 0;
 
-    @media(max-width: $tablet) {
-      padding: 6rem 0 2rem
-    }
-
-    @media(max-width: $mobile) {
-      padding: 4rem 0 1rem;
-    }
 
 
   }
@@ -65,28 +63,37 @@
   }
 
   &__link {
+    position: relative;
     display: block;
-    font-size: 1.7rem;
-    line-height: 2.6rem;
-    color: $red;
-    padding: 0 2rem 0 2.3rem;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: $black;
+    padding: 1rem 2rem 1rem 2rem;
     text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid $black;
+    height: 4.2rem;
 
-    @media (max-width: $tablet) {
-      font-size: 1.8rem;
-      line-height: 1.3;
-    }
 
-    @media (max-width: $mobile) {
-      padding: 0 2rem 0 2.3rem;
-      font-size: 1.4rem;
-      line-height: 2.6rem;
+    span {
+      position: relative;
+      z-index: 5;
     }
 
     &:hover {
-      font-weight: 700;
-      background-color: $purple;
       color: $white;
+
+      &:before {
+        position: absolute;
+        background-color: $red;
+        content: '';
+        left: -0.1rem;
+        width: calc(100% + 0.2rem);
+        top: 0.6rem;
+        height: 2.9rem;
+        border-radius: 4.3rem;
+        z-index: 2;
+      }
     }
   };
 
@@ -101,15 +108,7 @@
     overflow: hidden;
     max-height: 4rem;
 
-    @media(max-width: $tablet) {
-      top: 0px;
-      min-height: 3.3rem;
-      max-height: 3.3rem;;
-    }
 
-    @media (max-width: $mobile) {
-
-    }
 
     .dropdown.open & {
       max-height: 100rem;

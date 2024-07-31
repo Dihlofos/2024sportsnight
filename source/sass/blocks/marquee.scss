@@ -5,9 +5,9 @@
     align-items: center;
     justify-content: center;
     gap: 5.2rem;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
+    // overflow-x: auto;
+    // scrollbar-width: none;
+    // -ms-overflow-style: -ms-autohiding-scrollbar;
 
     &:not(:last-child) {
       margin: 0 0 4rem;
