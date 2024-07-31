@@ -1,0 +1,131 @@
+.faq {
+  padding: 18.1rem 0 33rem;
+
+  .container {
+    position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+
+    &--top-right {
+      right: -1.9rem;
+      top: -5.9rem;
+    }
+
+    &--bottom-right {
+      bottom: -38.7rem;
+      right: 15.2rem;
+      z-index: 2;
+    }
+
+    &--bottom-left {
+      bottom: -23rem;
+      left: 3.5rem;
+    }
+  }
+
+  &__title-cont {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    margin: 0 0 11rem;
+    padding-left: 3.4rem;
+    padding-right: 3.4rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 4.4rem;
+  }
+
+  &__item {
+    position: relative;
+    min-height: 38.7rem;
+    color: $black;
+    padding: 1.7rem 3rem 1.7rem 2.5rem;
+
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $white;
+      border-radius: 30px;
+      transition: all .2s ease-in;
+      z-index: 2;
+    }
+
+    &.show {
+      &:before {
+        background-color: $red;
+      }
+
+    }
+
+    &:hover {
+      &:before {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__item-descr {
+    position: relative;
+    display: none;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 500;
+    color: $white;
+    pointer-events: none;
+    z-index: 3;
+
+    .show & {
+      display: block;
+      pointer-events: initial
+    }
+  }
+
+  &__item-title {
+    position: relative;
+    @include pattern(3.4rem);
+    line-height: 1.2;
+    color: $purple;
+    z-index: 3;
+
+    .show & {
+      color: $white;
+      font-size: 2.4rem;
+      line-height: 1.25;
+      margin: 0 0 3rem;
+    }
+  }
+
+
+
+  &__arrow {
+    position: absolute;
+    bottom: 1.8rem;
+    right: 1.4rem;
+    color: $purple;
+    transition: all 0.2s ease-in-out;
+    z-index: 3;
+
+    .show & {
+      transform: rotate(180deg);
+      color: $white;
+      path {
+        fill: $purple;
+      }
+
+    }
+  }
+}
