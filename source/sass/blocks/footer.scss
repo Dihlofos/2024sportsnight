@@ -86,7 +86,6 @@
   &__main-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
   }
 
   &__socials {
@@ -94,11 +93,19 @@
     gap: 2.5rem;
   }
 
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+
   &__bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   &__emails {
@@ -137,8 +144,4 @@
       font-size: 3.2rem;
     }
   }
-
-
-
-
 }
