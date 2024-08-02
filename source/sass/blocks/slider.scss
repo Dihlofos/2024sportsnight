@@ -34,14 +34,11 @@
       font-size: 1.4rem;
       line-height: 1.2;
       transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-
-      &:hover {
-        background-color: $purple;
-        color: $white;
-
-        @media (max-width: $mobile) {
+      @media (min-width: $desktopFirst) {
+        &:hover {
           background-color: $purple;
-          color: $purple;
+          color: $white;
+
         }
       }
     }

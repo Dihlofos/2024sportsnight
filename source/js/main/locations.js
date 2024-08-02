@@ -1,10 +1,13 @@
 "use strict";
 (function () {
   const names = ["parks", "objects", "city", "centers"];
+  const vw = window.innerWidth;
+  const thumbsMargin = vw > 1024 ? 15 : 9;
+  const starsMargin = vw > 1024 ? 76 : 47;
 
   names.forEach((name) => {
     const swiper = new Swiper(`.js-location-thumbs-${name}`, {
-      spaceBetween: 15,
+      spaceBetween: thumbsMargin,
       slidesPerView: "auto",
       freeMode: true,
       watchSlidesProgress: true,
@@ -43,7 +46,7 @@
       if (!starsSlider) return;
 
       new Swiper(starsSlider, {
-        spaceBetween: 76,
+        spaceBetween: starsMargin,
         slidesPerView: 4,
         freeMode: true,
         watchSlidesProgress: true,

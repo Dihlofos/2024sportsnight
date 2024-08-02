@@ -1,6 +1,8 @@
 .marquee {
   overflow: hidden;
 
+
+
   &__block {
     display: flex;
     align-items: center;
@@ -14,8 +16,17 @@
       margin: 0 0 4rem;
     }
 
-    &::-webkit-scrollbar {
-      display: none;
+    @media(max-width: $tablet) {
+      gap: 2.4rem;
+      img {
+        width: 31.7rem;
+      }
+
+      &:not(:last-child) {
+        margin: 0 0 2rem;
+      }
     }
+
+
   }
 }

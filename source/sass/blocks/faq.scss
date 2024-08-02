@@ -2,6 +2,10 @@
   padding: 18.1rem 0 33rem;
   overflow: hidden;
 
+  @media (max-width: $tablet) {
+    padding: 9.5rem 0 19.3rem;
+  }
+
   .container {
     position: relative;
   }
@@ -12,17 +16,35 @@
     &--top-right {
       right: -1.9rem;
       top: -5.9rem;
+
+      @media (max-width: $tablet) {
+        display: none;
+      }
     }
 
     &--bottom-right {
       bottom: -38.7rem;
       right: 15.2rem;
       z-index: 2;
+
+      @media (max-width: $tablet) {
+        width: 19.4rem;
+        height: 17.1rem;
+        bottom: -21rem;
+        right: 2.5rem;
+      }
     }
 
     &--bottom-left {
       bottom: -23rem;
       left: 3.5rem;
+
+      @media (max-width: $tablet) {
+        width: 13.9rem;
+        height: 8.6rem;
+        bottom: -12rem;
+        left: 8.5rem;
+      }
     }
   }
 
@@ -35,6 +57,10 @@
     margin: 0 0 11rem;
     padding-left: 3.4rem;
     padding-right: 3.4rem;
+
+    @media (max-width: $tablet) {
+      margin: 0 0 6.2rem;
+    }
   }
 
   &__list {
@@ -42,6 +68,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     flex-wrap: wrap;
     gap: 4.4rem;
+
+    @media (max-width: $tablet) {
+      gap: 2rem;
+    }
   }
 
   &__item {
@@ -50,7 +80,11 @@
     color: $black;
     padding: 1.7rem 3rem 1.7rem 2.5rem;
 
-
+    @media (max-width: $tablet) {
+      min-height: 21.3rem;
+      border-radius: 1.9rem;
+      padding: 1rem 2.4rem 1rem 1.5rem;
+    }
 
     &:before {
       content: '';
@@ -63,6 +97,10 @@
       border-radius: 30px;
       transition: all .2s ease-in;
       z-index: 2;
+
+      @media (max-width: $tablet) {
+        border-radius: 19px;
+      }
     }
 
     &.show {
@@ -73,8 +111,10 @@
     }
 
     &:hover {
-      &:before {
-        transform: scale(1.05);
+      @media (min-width: $desktopFirst) {
+        &:before {
+          transform: scale(1.05);
+        }
       }
     }
   }
@@ -89,6 +129,11 @@
     pointer-events: none;
     z-index: 3;
 
+    @media (max-width: $tablet) {
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+
     .show & {
       display: block;
       pointer-events: initial
@@ -102,11 +147,22 @@
     color: $purple;
     z-index: 3;
 
+    @media (max-width: $tablet) {
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
     .show & {
       color: $white;
       font-size: 2.4rem;
       line-height: 1.25;
       margin: 0 0 3rem;
+
+      @media (max-width: $tablet) {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin: 0 0 1.8rem
+      }
     }
   }
 
@@ -119,6 +175,13 @@
     color: $purple;
     transition: all 0.2s ease-in-out;
     z-index: 3;
+
+    @media (max-width: $tablet) {
+      width: 3.3rem;
+      height: 3.3rem;
+      bottom: 1.4rem;
+      right: 1rem;
+    }
 
     .show & {
       transform: rotate(180deg);

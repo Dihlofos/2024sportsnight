@@ -7,6 +7,10 @@
     overflow: hidden;
     height: 8.6rem;
 
+    @media (max-width: $tablet) {
+      height: 4.1rem;
+    }
+
     &:before {
       position: absolute;
       content: '';
@@ -40,6 +44,16 @@
     border-radius: 45px;
     padding: 1.2rem 2.2rem 1.2rem;
     z-index: 5;
+
+    @media (max-width: $tablet) {
+      height: 4.1rem;
+      padding: 1.2rem 1rem 1.2rem;
+
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
   }
 
   &__phone-subtitle {
@@ -62,6 +76,7 @@
   &__logos {
     display: flex;
     gap: 4rem;
+    margin: 0 0 5.5rem;
   }
 
   &__wrapper {
@@ -122,8 +137,10 @@
     text-decoration: none;
     font-weight: 400;
 
-    &:hover {
-      opacity: 1;
+    @media (min-width: $desktopFirst) {
+      &:hover {
+        opacity: 1;
+      }
     }
 
     @media (max-width: $tablet) {

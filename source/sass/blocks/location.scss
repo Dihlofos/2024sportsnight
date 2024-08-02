@@ -6,6 +6,12 @@
   position: relative;
   box-shadow: 0px 14.769px 16.739px rgba(0, 0, 0, 0.15);
 
+  @media (max-width: $tablet) {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-bottom: 1.8rem;
+  }
+
 
   &--green {
     background-color: $green;
@@ -29,21 +35,57 @@
     &--volan {
       bottom: 42rem;
       left: -25.3rem;
+
+      @media (max-width: $desktop) {
+        left: -30rem;
+        bottom: 46rem;
+      }
     }
 
     &--tree {
       bottom: 18.9rem;
       right: -25rem;
+
+      @media (max-width: $tablet) {
+        right: auto;
+        left: -6rem;
+        bottom: -4rem;
+        width: 9rem;
+        height: 12.9rem;
+      }
     }
 
     &--bee {
       bottom: 42rem;
       left: -26.3rem;
+      @media (max-width: $desktop) {
+        bottom: 46rem;
+      }
+
+      @media (max-width: $tablet) {
+        left: auto;
+        right: -6rem;
+        bottom: -4.7rem;
+        width: 10.5rem;
+        height: 10.2rem;
+      }
     }
 
     &--skate {
       bottom: 24.9rem;
       right: -24.7rem;
+
+      @media (max-width: $desktop) {
+        bottom: 36rem;
+      }
+
+      @media (max-width: $tablet) {
+        bottom: -6.5rem;
+        right: auto;
+        left: -4.7rem;
+        width: 13.6rem;
+        height: 12.8rem;
+      }
     }
   }
 
@@ -73,6 +115,16 @@
 
     .location--red & {
       color: $red;
+
+      @media (max-width: $tablet) {
+        height: 10rem;
+        width: calc(100% + 4rem);
+        margin-left: -2rem;
+        border-radius: 35px;
+        text-align: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
     }
 
     img {
@@ -94,15 +146,62 @@
       @include pattern(5.9rem);
       color: inherit;
     }
+
+    @media (max-width: $tablet) {
+      height: 6.2rem;
+      width: 100%;
+      margin-left: 0;
+      border-radius: 20px;
+
+      img {
+        width: 6.2rem;
+        height: 6.2rem;
+
+        &:first-child {
+          left: -1.9rem;
+        }
+
+        &:last-child {
+          right: -1.9rem;
+        }
+      }
+
+      .location--red & {
+        img {
+
+          &:first-child {
+            left: 0;
+          }
+
+          &:last-child {
+            right: 0;
+          }
+        }
+
+      }
+
+      span {
+        font-size: 4rem;
+      }
+
+    }
   }
 
   &__thumbs-container {
     position: relative;
     padding: 0 5.7rem 0;
+
+    @media (max-width: $tablet) {
+      padding: 0 3.9rem;
+    }
   }
 
   &__main {
     padding-top: 7.5rem;
+
+    @media (max-width: $tablet) {
+      padding-top: 3.9rem;
+    }
 
   }
 
@@ -118,14 +217,25 @@
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 
+    @media (max-width: $tablet) {
+      font-size: 1.9rem;
+      padding: .5rem 1.7rem .6rem
+
+    }
+
     .location--green & {
       color: $red;
       background-color: $white;
 
-      &:hover,
       &.swiper-slide-thumb-active {
         color: $white;
         background-color: $red;
+      }
+      @media (min-width: $desktopFirst) {
+        &:hover {
+          color: $white;
+          background-color: $red;
+        }
       }
     }
 
@@ -133,10 +243,16 @@
       color: $pink;
       background-color: $white;
 
-      &:hover,
       &.swiper-slide-thumb-active {
         color: $white;
         background-color: $pink;
+      }
+
+      @media (min-width: $desktopFirst) {
+        &:hover {
+          color: $white;
+          background-color: $pink;
+        }
       }
     }
 
@@ -144,10 +260,16 @@
       color: $green;
       background-color: $white;
 
-      &:hover,
       &.swiper-slide-thumb-active {
         color: $white;
         background-color: $green;
+      }
+
+      @media (min-width: $desktopFirst) {
+        &:hover{
+          color: $white;
+          background-color: $green;
+        }
       }
     }
 
@@ -155,18 +277,22 @@
       color: $orange;
       background-color: $white;
 
-      &:hover,
       &.swiper-slide-thumb-active {
         color: $white;
         background-color: $orange;
+      }
+
+      @media (min-width: $desktopFirst) {
+        &:hover {
+          color: $white;
+          background-color: $orange;
+        }
       }
     }
 
     span {
       margin-top: -0.1rem;
     }
-
-
   }
 
   &__arrow {
@@ -177,6 +303,18 @@
     background: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    padding: 0;
+
+    svg {
+      width: 100%;
+
+    }
+
+    @media (max-width: $tablet) {
+      width: 1.7rem;
+      height: 1.7rem;
+      top: 0.6rem;
+    }
 
     &.swiper-button-disabled {
       cursor: auto;
@@ -184,18 +322,28 @@
 
     &--prev {
       left: 1rem;
+
+      @media (max-width: $tablet) {
+        left: 1.5rem;
+      }
     }
 
     &--next {
       right: 1rem;
+
+      @media (max-width: $tablet) {
+        right: 1.5rem;
+      }
     }
 
     .location--green & {
-      &:hover {
+      @media (min-width: $desktopFirst) {
+        &:hover {
           svg path {
             fill: $red !important;
           }
         }
+      }
     }
   }
 
@@ -204,12 +352,20 @@
     justify-content: space-between;
     padding: 7.6rem 5rem 8.5rem;
     align-items: flex-start;
+
+    @media (max-width: $tablet) {
+      padding: 4.7rem 1.5rem 3.8rem;
+    }
   }
 
   &__cards {
     display: flex;
     flex-wrap: wrap;
     gap: 3.3rem;
+
+    @media (max-width: $tablet) {
+      gap: 1.9rem;
+    }
   }
 
   &__card {
@@ -224,15 +380,36 @@
     &--small {
       min-height: 23.9rem;
     }
+
+    @media (max-width: $tablet) {
+      width: 18.6rem;
+      min-height: 19.8rem;
+      padding: 1.3rem 1.2rem 1.5rem 1.5rem;
+      border-radius: 19px;
+
+      &--small {
+        min-height: 15.1rem;
+      }
+    }
+
+
   }
 
   &__card-header {
     margin: 0 0 2.8rem;
+
+    @media (max-width: $tablet) {
+      margin: 0 0 1.8rem;
+    }
   }
 
   &__link {
     &:not(:last-child) {
       margin-bottom: 0.8rem;
+
+      @media (max-width: $tablet) {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 
@@ -242,11 +419,20 @@
     line-height: 1.2;
     margin: 0 0 2.4rem;
 
+    @media (max-width: $tablet) {
+      font-size: .9rem;
+      margin: 0 0 1.4rem;
+    }
+
     p {
       margin: 0;
 
       &:not(:last-child) {
         margin: 0 0 2.2rem;
+
+        @media (max-width: $tablet) {
+          margin: 0 0 1.5rem;
+        }
       }
 
     }
@@ -255,6 +441,10 @@
   &__card-name {
     @include pattern(2.3rem);
     line-height: 1.1;
+
+    @media (max-width: $tablet) {
+      font-size: 1.5rem;
+    }
 
     .location--green & {
       color: $red;
@@ -275,6 +465,10 @@
 
   &__card-time {
     @include pattern(2.3rem);
+
+    @media (max-width: $tablet) {
+      font-size: 1.5rem;
+    }
 
     .location--green & {
       color: $orange;
@@ -300,11 +494,24 @@
     height: 31.3rem;
     border-radius: 30px;
     overflow: hidden;
+
+    @media (max-width: $tablet) {
+      width: 21.5rem;
+      height: 19.8rem;
+      border-radius: 1.9rem;
+    }
   }
 
   &__subtitle {
     @include pattern(3.4rem);
     margin: 0 0 4rem 6rem;
+
+    @media (max-width: $tablet) {
+      font-size: 1.9rem;
+      margin: 0 0 2.8rem 1.6rem;
+
+
+    }
   }
 
   &__stars {
@@ -312,6 +519,16 @@
 
     .swiper {
       margin: 0 6rem;
+      display: none;
+
+      &.swiper-container-initialized {
+        display: block;
+      }
+
+      @media (max-width: $tablet) {
+        margin: 0 1.5rem;
+        padding: 0 0 4rem;
+      }
     }
 
     .location__arrow {
@@ -320,12 +537,28 @@
       &.swiper-button-disabled {
         display: none;
       }
+
+      &--prev {
+        top: auto;
+        bottom: 1.3rem;
+        left: calc(50% - 2.5rem);
+      }
+
+      &--next {
+        top: auto;
+        bottom: 1.3rem;
+        right: calc(50% - 2.5rem);
+      }
     }
   }
 
   &__star-image {
     position: relative;
     margin: 0 0 1.8rem;
+
+    @media (max-width: $tablet) {
+      margin: 0 0 0.6rem;
+    }
 
     &:after {
       position: absolute;
@@ -335,6 +568,13 @@
       width: 4.7rem;
       height: 4.7rem;
       background-size: cover;
+
+      @media (max-width: $tablet) {
+        width: 2.8rem;
+        height: 2.8rem;
+        bottom: 0.4rem;
+        right: 0.2rem;
+      }
     }
 
     .location--green &:after {
@@ -358,12 +598,23 @@
     @include pattern(2.4rem);
     text-align: center;
     margin: 0 0 0.3rem;
+
+    @media (max-width: $tablet) {
+      font-size: 1.5rem;
+      line-height: 1.1;
+      margin: 0 0 0;
+    }
   }
 
   &__star-descr {
     font-size: 1.9rem;
     font-weight: 600;
     text-align: center;
+
+    @media (max-width: $tablet) {
+      font-size: 1.2rem;
+      line-height: 1.1;
+    }
 
   }
 

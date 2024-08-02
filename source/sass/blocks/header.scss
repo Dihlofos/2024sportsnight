@@ -35,6 +35,11 @@
     height: 6.5rem;
     border-radius: 32.5px;
     padding: 1.6rem 4.5rem 1.5rem 5.8rem;
+
+    @media(max-width: $tablet) {
+      height: 3.5rem;
+      padding: 0.7rem 2rem 1.3rem 3.1rem;
+    }
   }
 
   &__logos {
@@ -47,7 +52,7 @@
     @media (max-width: $tablet) {
       align-self: center;
       gap: 1.8rem;
-      padding: 1.5rem 0 0 0px;
+      padding: 0;
     }
 
     @media (max-width: $mobile) {
@@ -66,7 +71,8 @@
       width: auto;
 
       @media (max-width: $tablet) {
-        width: 7.4rem;
+        width: auto;
+        height: 2rem;
       }
 
       @media (max-width: $mobile) {
@@ -78,8 +84,11 @@
       fill: currentColor;
     }
 
-    &:hover {
-      color: $purple;
+
+    @media (min-width: $desktopFirst) {
+      &:hover {
+        color: $purple;
+      }
     }
 
     &:nth-child(2) {

@@ -19,17 +19,25 @@
     cursor: pointer;
     border: 1px solid transparent;
 
+    @media (max-width: $tablet) {
+      font-size: 1.5rem;
+      line-height: 1.1;
+      height: 2.3rem;
+      padding: 0.5rem;
+    }
+
 
     &--red {
       background-color: $red;
       color: $white;
 
-
-      &:hover,
-      &:active {
-          background-color: $white;
-          color:$black;
-          border: 1px solid $red;
+      @media (min-width: $desktopFirst) {
+        &:hover,
+        &:active {
+            background-color: $white;
+            color:$black;
+            border: 1px solid $red;
+        }
       }
     }
 
@@ -37,11 +45,14 @@
       background-color: $orange;
       color: $white;
 
-      &:hover,
-      &:active {
-          background-color: $white;
-          color: $black;
-          border: 1px solid $orange;
+      @media (min-width: $desktopFirst) {
+        &:hover,
+        &:active {
+            background-color: $white;
+            color: $black;
+            border: 1px solid $orange;
+        }
+
       }
     }
 
@@ -49,11 +60,14 @@
       background-color: $pink;
       color: $white;
 
-      &:hover,
-      &:active {
-          background-color: $white;
-          color: $black;
-          border: 1px solid $pink;
+      @media (min-width: $desktopFirst) {
+
+        &:hover,
+        &:active {
+            background-color: $white;
+            color: $black;
+            border: 1px solid $pink;
+        }
       }
     }
 
@@ -61,11 +75,14 @@
       background-color: $green;
       color: $white;
 
-      &:hover,
-      &:active {
-          background-color: $white;
-          color: $black;
-          border: 1px solid $green;
+      @media (min-width: $desktopFirst) {
+
+        &:hover,
+        &:active {
+            background-color: $white;
+            color: $black;
+            border: 1px solid $green;
+        }
       }
     }
 

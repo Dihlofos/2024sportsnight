@@ -21,7 +21,10 @@
   }
 
   @media (max-width: $tablet) {
-    font-size: 3.5rem;
-    line-height: 1;
+    font-size: 4rem;
+    line-height: 0.95;
+    min-width: unset;
+    height: 5.9rem;
+    padding: 1rem 1rem 2rem;
   }
 }

@@ -1,13 +1,14 @@
 "use strict";
 (function () {
   const slider = document.querySelector(".js-actions-slider");
-  console.log("slider", slider);
+  const vw = window.innerWidth;
+  const sliderMargin = vw > 1024 ? 43 : 20;
   if (!slider) return;
 
   new Swiper(`.js-actions-slider`, {
     // Optional parameters
     slidesPerView: 3,
-    spaceBetween: 43,
+    spaceBetween: sliderMargin,
     initialSlide: 0,
     draggable: false,
     pagination: false,
@@ -134,10 +135,13 @@
 "use strict";
 (function () {
   const names = ["parks", "objects", "city", "centers"];
+  const vw = window.innerWidth;
+  const thumbsMargin = vw > 1024 ? 15 : 9;
+  const starsMargin = vw > 1024 ? 76 : 47;
 
   names.forEach((name) => {
     const swiper = new Swiper(`.js-location-thumbs-${name}`, {
-      spaceBetween: 15,
+      spaceBetween: thumbsMargin,
       slidesPerView: "auto",
       freeMode: true,
       watchSlidesProgress: true,
@@ -176,7 +180,7 @@
       if (!starsSlider) return;
 
       new Swiper(starsSlider, {
-        spaceBetween: 76,
+        spaceBetween: starsMargin,
         slidesPerView: 4,
         freeMode: true,
         watchSlidesProgress: true,

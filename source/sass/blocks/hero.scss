@@ -2,6 +2,11 @@
   overflow: hidden;
   margin: 0 0 15.7rem;
   padding: 0 0 4rem;
+
+  @media (max-width: $tablet) {
+    margin: 0 0 6rem;
+  }
+
   &__main {
     position: relative;
     margin: 0 auto;
@@ -9,11 +14,28 @@
     margin-top: 15.3rem;
     margin-bottom: 9rem;
     max-width: 95.7rem;
+
+    @media (max-width: $tablet) {
+      margin-top: 17.3rem;
+      margin-bottom: 19.4rem;
+    }
   }
 
   &__name {
     @include pattern(12.7rem);
     text-align: center;
+
+    @media (max-width: $tablet) {
+      font-size: 7.7rem;
+    }
+  }
+
+  .title {
+    @media (max-width: $tablet) {
+      min-width: 39.3rem;
+      margin: 0 0 7.9rem;
+    }
+
   }
 
   &__decor {
@@ -22,61 +44,145 @@
     &--left-top {
       top: -5.8rem;
       left: 1.7rem;
+
+      @media (max-width: $tablet) {
+        width: 10.1rem;
+        height: 9.7rem;
+        top: -9.5rem;
+        left: 7.5rem;
+      }
+
     }
 
     &--right-top {
       top: -8.9rem;
       right: -11.9rem;
+
+      @media (max-width: $tablet) {
+        width: 11.2rem;
+        height: 6.9rem;
+        top: -12.4rem;
+        right: 4.6rem;
+      }
     }
 
     &--left-bottom {
       bottom: 3.9rem;
       left: -28.5rem;
+
+      @media (max-width: $tablet) {
+        width: 19.8rem;
+        height: 19rem;
+        bottom: 4.7rem;
+        left: -5.3rem;
+      }
     }
 
     &--bottom {
       bottom: 0;
       left: 22rem;
+
+      @media (max-width: $tablet) {
+        width: 9.9rem;
+        height: 6.7rem;
+        bottom: -1.7rem;
+        left: 23.9rem;
+      }
     }
 
     &--right-bottom {
       bottom: -9.9rem;
       right: -25.9rem;
+
+      @media (max-width: $tablet) {
+        width: 23.2rem;
+        height: 23.9rem;
+        bottom: -13.6rem;
+        right: -3.1rem;
+      }
     }
 
     &--about-left-top {
       top: 3.2rem;
       left: -12rem;
+
+      @media (max-width: $tablet) {
+        width: 4rem;
+        height: 4rem;
+        top: -12.1rem;
+        left: 6.2rem;
+      }
     }
 
     &--about-left-bottom {
       bottom: -8.5rem;
       left: -17.5rem;
+
+      @media (max-width: $tablet) {
+        width: 11.6rem;
+        height: 12.6rem;
+        bottom: -18.1rem;
+        left: 10.1rem;
+
+      }
     }
 
     &--about-right-bottom {
       bottom: -9.4rem;
       right: -30.5rem;
+
+      @media (max-width: $tablet) {
+        width: 26.6rem;
+        height: 23.5rem;
+        bottom: -25.5rem;
+        right: -4rem;
+      }
     }
 
     &--action-left-bottom {
       bottom: -2.4rem;
       left: 4.4rem;
+
+      @media (max-width: $tablet) {
+        width: 3.4rem;
+        height: 3.4rem;
+        bottom: -1.7rem;
+      }
     }
 
     &--action-left-top {
       top: -2.9rem;
       left: 27.6rem;
+
+      @media (max-width: $tablet) {
+        width: 3.4rem;
+        height: 3.4rem;
+        top: -2rem;
+        left: 16rem;
+      }
     }
 
     &--action-right-top {
       top: -3.6rem;
       right: 24rem;
+
+      @media (max-width: $tablet) {
+        width: 3.4rem;
+        height: 3.4rem;
+        top: -1.6rem;
+        right: 15rem;
+      }
     }
 
     &--action-right-bottom {
       bottom: -3rem;
       right: 1.6rem;
+      @media (max-width: $tablet) {
+        width: 3.4rem;
+        height: 3.4rem;
+        bottom: -2rem;
+        right: 3rem;
+      }
     }
   }
 
@@ -84,6 +190,13 @@
     position: absolute;
     right: 7.6rem;
     bottom: 9.8rem;
+
+    @media (max-width: $tablet) {
+      width: 24rem;
+      height: 10.8rem;
+      right: 10.5rem;
+      bottom: 14.3rem;
+    }
   }
 
   &__title {
@@ -102,6 +215,10 @@
     align-items: center;
     max-width: 86.1rem;
     margin: 0 auto 19.8rem;
+
+    @media (max-width: $tablet) {
+      margin: 0 auto 32.7rem;
+    }
   }
 
   &__action {
@@ -132,6 +249,18 @@
     height: 6.6rem;
     gap: 2rem;
     color: $purple;
+
+    @media (max-width: $tablet) {
+      font-size: 2.1rem;
+      height: 3.9rem;
+      width: 27.1rem;
+
+      img {
+        width: 2.4rem;
+        height: 2.4rem;
+
+      }
+    }
   }
 
   &__desc {
@@ -158,6 +287,23 @@
     }
     &--par4 {
       max-width: 60rem
+    }
+
+    @media(max-width: $tablet) {
+      font-size: 1.7rem;
+      max-width: 60rem;
+
+      &--par1 {
+        margin: 0 0 1.6rem;
+      }
+
+      &--par2 {
+        margin: 0 0 1.9rem;
+      }
+
+      &--par3 {
+        font-size: 2.3rem;
+      }
     }
   }
 
