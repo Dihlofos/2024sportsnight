@@ -35,6 +35,10 @@ body {
     padding-top: 0.6rem;
   }
 
+  @media (max-width: $mobile) {
+    padding-top: 1.3rem;
+  }
+
   @media (max-width: $laptop) {
     // шаблон медиа-запроса desktop-first
   }

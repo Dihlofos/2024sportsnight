@@ -7,6 +7,10 @@
     margin: 0 0 6rem;
   }
 
+  @media (max-width: $mobile) {
+    padding: 0 0 3.5rem;
+  }
+
   &__main {
     position: relative;
     margin: 0 auto;
@@ -19,6 +23,11 @@
       margin-top: 17.3rem;
       margin-bottom: 19.4rem;
     }
+
+    @media (max-width: $mobile) {
+      margin-top: 15.3rem;
+      margin-bottom: 15.6rem;
+    }
   }
 
   &__name {
@@ -28,6 +37,10 @@
     @media (max-width: $tablet) {
       font-size: 7.7rem;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 4.5rem;
+    }
   }
 
   .title {
@@ -36,10 +49,27 @@
       margin: 0 0 7.9rem;
     }
 
+    @media (max-width: $mobile) {
+      min-width: 26.9rem;
+      margin: 0 0 4.4rem;
+    }
+
   }
 
   &__decor {
     position: absolute;
+
+    &--mobile-circle {
+      display: none;
+
+      @media (max-width: $mobile) {
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        top: -12.6rem;
+        right: 2.5rem;
+      }
+    }
 
     &--left-top {
       top: -5.8rem;
@@ -50,6 +80,13 @@
         height: 9.7rem;
         top: -9.5rem;
         left: 7.5rem;
+      }
+
+      @media (max-width: $mobile) {
+        width: 6.9rem;
+        height: 6.5rem;
+        top: -7.3rem;
+        left: 0.9rem;
       }
 
     }
@@ -64,6 +101,13 @@
         top: -12.4rem;
         right: 4.6rem;
       }
+
+      @media (max-width: $mobile) {
+        width: 11.1rem;
+        height: 6.9rem;
+        top: -12.4rem;
+        right: 11.4rem;
+      }
     }
 
     &--left-bottom {
@@ -75,6 +119,13 @@
         height: 19rem;
         bottom: 4.7rem;
         left: -5.3rem;
+      }
+
+      @media (max-width: $mobile) {
+        width: 14rem;
+        height: 13.4rem;
+        bottom: 4rem;
+        left: -3.6rem;
       }
     }
 
@@ -88,6 +139,13 @@
         bottom: -1.7rem;
         left: 23.9rem;
       }
+
+      @media (max-width: $mobile) {
+        left: 3.3rem;
+        bottom: -5.9rem;
+        width: 7.9rem;
+        height: 5.4rem;
+      }
     }
 
     &--right-bottom {
@@ -100,6 +158,13 @@
         bottom: -13.6rem;
         right: -3.1rem;
       }
+
+      @media (max-width: $mobile) {
+        width: 19.2rem;
+        height: 20.3rem;
+        bottom: -9.3rem;
+        right: -2.4rem;
+      }
     }
 
     &--about-left-top {
@@ -111,6 +176,10 @@
         height: 4rem;
         top: -12.1rem;
         left: 6.2rem;
+      }
+
+      @media (max-width: $mobile) {
+        display: none;
       }
     }
 
@@ -125,6 +194,13 @@
         left: 10.1rem;
 
       }
+
+      @media (max-width: $mobile) {
+        width: 7rem;
+        height: 7.4rem;
+        bottom: -13.3rem;
+        left: 3.4rem;
+      }
     }
 
     &--about-right-bottom {
@@ -137,6 +213,13 @@
         bottom: -25.5rem;
         right: -4rem;
       }
+
+      @media (max-width: $mobile) {
+        width: 18.8rem;
+        height: 16.5rem;
+        bottom: -22.7rem;
+        right: -2.5rem;
+      }
     }
 
     &--action-left-bottom {
@@ -148,6 +231,13 @@
         height: 3.4rem;
         bottom: -1.7rem;
       }
+
+      @media (max-width: $mobile) {
+        left: 1.8rem;
+        bottom: -2.5rem;
+      }
+
+
     }
 
     &--action-left-top {
@@ -159,6 +249,11 @@
         height: 3.4rem;
         top: -2rem;
         left: 16rem;
+      }
+
+      @media (max-width: $mobile) {
+        top: -2.4rem;
+        left: 3.5rem;
       }
     }
 
@@ -172,6 +267,11 @@
         top: -1.6rem;
         right: 15rem;
       }
+
+      @media (max-width: $mobile) {
+        top: -2.8rem;
+        right: 4.4rem;
+      }
     }
 
     &--action-right-bottom {
@@ -182,6 +282,11 @@
         height: 3.4rem;
         bottom: -2rem;
         right: 3rem;
+      }
+
+      @media (max-width: $mobile) {
+        bottom: -2.5rem;
+        right: 1.6rem;
       }
     }
   }
@@ -196,6 +301,13 @@
       height: 10.8rem;
       right: 10.5rem;
       bottom: 14.3rem;
+    }
+
+    @media (max-width: $mobile) {
+      width: 18.5rem;
+      height: 8.3rem;
+      right: 1.2rem;
+      bottom: 15rem;
     }
   }
 
@@ -218,6 +330,10 @@
 
     @media (max-width: $tablet) {
       margin: 0 auto 32.7rem;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 auto 28.7rem;
     }
   }
 
@@ -258,7 +374,16 @@
       img {
         width: 2.4rem;
         height: 2.4rem;
+      }
+    }
 
+    @media (max-width: $mobile) {
+      font-size: 1.8rem;
+      height: 3.3rem;
+      width: 22.8rem;
+      img {
+        width: 2rem;
+        height: 2rem;
       }
     }
   }
@@ -303,6 +428,24 @@
 
       &--par3 {
         font-size: 2.3rem;
+      }
+    }
+
+    @media(max-width: $mobile) {
+      font-size: 1.4rem;
+      max-width: unset;
+
+      &--par1 {
+        margin: 0 0 5rem;
+      }
+
+      &--par2 {
+        margin: 0 0 1.9rem;
+      }
+
+      &--par3 {
+        font-size: 1.9rem;
+        margin: 0 0 1.8rem;
       }
     }
   }

@@ -6,6 +6,10 @@
     margin: 0 0 8.7rem;
   }
 
+  @media (max-width: $mobile) {
+    margin: 0 0 9.7rem;
+  }
+
   .container {
     position: relative;
   }
@@ -20,6 +24,12 @@
     @media (max-width: $tablet) {
       margin: 0 0 9rem;
     }
+
+    @media (max-width: $mobile) {
+      margin: 0px 0 7.5rem;
+    }
+
+
   }
 
   &__slide {
@@ -33,6 +43,17 @@
 
     @media (max-width: $tablet) {
       border-radius: 21px;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 1rem;
+      border-radius: 41px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 
@@ -53,11 +74,21 @@
       top: 6.5rem;
     }
 
+    @media (max-width: $mobile) {
+      width: 3.8rem;
+      height: 3.8rem;
+      top: calc(50% - 1.9rem);
+    }
+
     &--prev {
       left: -3.5rem;
 
       @media (max-width: $desktop) {
         left: 1rem;
+      }
+
+      @media (max-width: $mobile) {
+        left: 1.5rem;
       }
     }
 
@@ -67,12 +98,20 @@
       @media (max-width: $desktop) {
         right: 1rem;
       }
+
+      @media (max-width: $mobile) {
+        right: 1.5rem;
+      }
     }
   }
 
   &__info {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
   }
 
   &__decor {
@@ -86,6 +125,10 @@
       margin-left: 0;
       margin-top: 0;
     }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
   }
 
   &__blocks {
@@ -96,6 +139,14 @@
 
     @media (max-width: $tablet) {
       max-width: 34rem;
+    }
+
+    @media (max-width: $mobile) {
+      max-width: unset;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin: 9.4rem 0 0;
     }
   }
 
@@ -111,6 +162,15 @@
       height: 10.8rem;
       border-radius: 20px;
       padding: 1.9rem 1rem 3.5rem;
+      height: auto;
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin: 0;
+      padding: 3.4rem 2rem 3.5rem;
+      border-radius: 31px;
+      min-height: 23.5rem;
     }
 
     &:nth-child(2),
@@ -122,6 +182,11 @@
         width: calc(50% - 1.2rem);
         margin-top: 2rem;
         margin-left: 2.3rem;
+      }
+
+      @media (max-width: $mobile) {
+        width: 100%;
+        margin: 0;
       }
     }
 
@@ -149,6 +214,11 @@
       font-size: 2rem;
       margin: 0 0 0.5rem;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 4.5rem;
+      margin: 0 0 2rem;
+    }
   }
 
   &__block-text {
@@ -158,6 +228,10 @@
     @media (max-width: $tablet) {
       font-size: 1.2rem;
       line-height: 1.1;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 2.5rem;
     }
   }
 }

@@ -19,12 +19,19 @@
   }
 
   &__mobile-toggler {
-    position: fixed;
+    display: none;
+    position: absolute;
     background: none;
     border: none;
-    top: 20px;
-    right: 7px;
+    top: 28px;
+    right: 28px;
     z-index: 70;
+    top: 32px;
+    right: 28px;
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
   }
 
   &__wrapper {
@@ -37,7 +44,7 @@
       height: 100%;
       background-color: $red;
       z-index: 72;
-      padding: 6.4rem 4.3rem 2.7rem 1.6rem;
+      padding: 6.4rem 4.3rem 2.7rem 0;
 
       .nav.is-active & {
         display: block;
@@ -60,18 +67,35 @@
     @media (max-width: $mobile) {
       margin: 0;
       flex-direction: column;
-      gap: 2.5rem;
+      gap: 2rem;
+      padding-left: 3rem;
     }
   }
 
+  &__decor {
+    @media (max-width: $mobile) {
+      position: absolute;
+
+      &--big {
+        bottom: 6.5rem;
+        left: 0;
+      }
+
+      &--circles {
+        right: 7.7rem;
+        top: 24.3rem;
+      }
+    }
+
+  }
+
+
   &__close {
     position: absolute;
-    top: 2.6rem;
-    right: 1.2rem;
+    top: 3rem;
+    right: 2.3rem;
     background: none;
     border: none;
-    width: 4.5rem;
-    height: 4.5rem;
 
     svg {
       width: 100%;
@@ -107,11 +131,10 @@
     }
 
     @media (max-width: $mobile) {
-      font-family: $pattern;
-      font-size: 3.6rem;
+      font-size: 1.6rem;
       line-height: 1;
-      text-transform: uppercase;
       color: $white;
+      font-weight: normal;
 
       &:hover {
         color: $white;

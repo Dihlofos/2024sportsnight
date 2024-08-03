@@ -3,11 +3,12 @@
   const slider = document.querySelector(".js-actions-slider");
   const vw = window.innerWidth;
   const sliderMargin = vw > 1024 ? 43 : 20;
+  const slidesPerView = vw > 744 ? 3 : 1;
   if (!slider) return;
 
   new Swiper(`.js-actions-slider`, {
     // Optional parameters
-    slidesPerView: 3,
+    slidesPerView: slidesPerView,
     spaceBetween: sliderMargin,
     initialSlide: 0,
     draggable: false,
@@ -137,7 +138,8 @@
   const names = ["parks", "objects", "city", "centers"];
   const vw = window.innerWidth;
   const thumbsMargin = vw > 1024 ? 15 : 9;
-  const starsMargin = vw > 1024 ? 76 : 47;
+  const starsMargin = vw > 1024 ? 76 : vw > 744 ? 47 : 26;
+  const starsSlidersPerView = vw >= 744 ? 4 : 2;
 
   names.forEach((name) => {
     const swiper = new Swiper(`.js-location-thumbs-${name}`, {
@@ -181,7 +183,7 @@
 
       new Swiper(starsSlider, {
         spaceBetween: starsMargin,
-        slidesPerView: 4,
+        slidesPerView: starsSlidersPerView,
         freeMode: true,
         watchSlidesProgress: true,
         loop: false,
@@ -225,31 +227,28 @@
 
 "use strict";
 (function () {
-  const nav = document.querySelector('.js-nav');
-  const toggler = nav.querySelector('.js-nav-toggler');
-  const closeButton = nav.querySelector('.js-nav-close');
-  const links = nav.querySelectorAll('.js-scroll');
+  const nav = document.querySelector(".js-nav");
+  const toggler = document.querySelector(".js-nav-toggler");
+  const closeButton = nav.querySelector(".js-nav-close");
+  const links = nav.querySelectorAll(".js-scroll");
 
-  toggler.addEventListener('click', () => {
-    nav.classList.toggle('is-active');
-  })
+  toggler.addEventListener("click", () => {
+    nav.classList.toggle("is-active");
+  });
 
-  closeButton.addEventListener('click', () => {
+  closeButton.addEventListener("click", () => {
     closeNav();
-  })
+  });
 
   links.forEach((link) => {
-    link.addEventListener('click', () => {
+    link.addEventListener("click", () => {
       closeNav();
-    })
-  })
-
+    });
+  });
 
   function closeNav() {
-    nav.classList.remove('is-active');
+    nav.classList.remove("is-active");
   }
-
-
 })();
 
 "use strict";

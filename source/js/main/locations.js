@@ -3,7 +3,8 @@
   const names = ["parks", "objects", "city", "centers"];
   const vw = window.innerWidth;
   const thumbsMargin = vw > 1024 ? 15 : 9;
-  const starsMargin = vw > 1024 ? 76 : 47;
+  const starsMargin = vw > 1024 ? 76 : vw > 744 ? 47 : 26;
+  const starsSlidersPerView = vw >= 744 ? 4 : 2;
 
   names.forEach((name) => {
     const swiper = new Swiper(`.js-location-thumbs-${name}`, {
@@ -47,7 +48,7 @@
 
       new Swiper(starsSlider, {
         spaceBetween: starsMargin,
-        slidesPerView: 4,
+        slidesPerView: starsSlidersPerView,
         freeMode: true,
         watchSlidesProgress: true,
         loop: false,

@@ -27,6 +27,17 @@
       }
     }
 
+    @media(max-width: $mobile) {
+      gap: 2rem;
+      img {
+        width: 25.2rem;
+      }
+
+      &:not(:last-child) {
+        margin: 0 0 1.5rem;
+      }
+    }
+
 
   }
 }
