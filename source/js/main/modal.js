@@ -22,7 +22,4 @@
       }
     });
   });
-
-  console.log("trigger", triggers);
-  console.log("modals", modals);
 })();

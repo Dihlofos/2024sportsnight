@@ -146,7 +146,9 @@
       spaceBetween: thumbsMargin,
       slidesPerView: "auto",
       freeMode: true,
+      speed: 300,
       watchSlidesProgress: true,
+      slideToClickedSlide: true,
     });
 
     new Swiper(`.js-location-content-${name}`, {
@@ -165,9 +167,12 @@
       on: {
         afterInit: function (e) {
           initStarsSlider(e.slides[e.realIndex]);
+          e.thumbs.swiper.params.slideToClickedSlide = true;
+          e.thumbs.swiper.update();
         },
-        slideChange: function (e) {
+        realIndexChange: function (e) {
           initStarsSlider(e.slides[e.realIndex]);
+          e.thumbs.swiper.slideToLoop(swiper.realIndex);
         },
       },
     });
@@ -176,8 +181,6 @@
       const starsSlider = el.querySelector(".js-stars");
       const prevButton = el.querySelector(".js-stars-prev");
       const nextButton = el.querySelector(".js-stars-next");
-
-      console.log("starsSlider", starsSlider);
 
       if (!starsSlider) return;
 
@@ -220,9 +223,6 @@
       }
     });
   });
-
-  console.log("trigger", triggers);
-  console.log("modals", modals);
 })();
 
 "use strict";
