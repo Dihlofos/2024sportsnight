@@ -10,6 +10,7 @@
 
   @media (max-width: $mobile) {
     padding-top: 10rem;
+    padding-bottom: 26.6rem;
   }
 
   .container {
@@ -127,7 +128,13 @@
       @media (max-width: $tablet) {
         margin: 0 0 5.8rem;
       }
+
+      @media (max-width: $mobile) {
+        margin: 0 0 18.4rem;
+      }
     }
+
+
 
   }
 
@@ -179,7 +186,7 @@
       display: flex;
       font-size: 1.7rem;
       height: 2.2rem;
-      padding:0.5rem 0.5rem 0.5rem 1.5rem;
+      padding: 0.7rem 0.5rem 0.5rem 1.5rem;
       gap: 1.4rem;
 
       img {
@@ -244,7 +251,7 @@
       @media (max-width: $mobile) {
         margin: 0 auto 1rem;
         max-width: 26.3rem;
-        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+        padding: 0.7rem 0.5rem 0.5rem 1.5rem;
       }
     }
 
@@ -266,7 +273,7 @@
 
       @media (max-width: $mobile) {
         margin: 0 auto 1rem;
-        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+        padding: 0.7rem 0.5rem 0.5rem 1.5rem;
       }
     }
 
@@ -285,7 +292,7 @@
       @media (max-width: $mobile) {
         margin: 0 auto 5rem;
         max-width: 21.7rem;
-        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+        padding: 0.7rem 0.5rem 0.5rem 1.5rem;
       }
     }
 

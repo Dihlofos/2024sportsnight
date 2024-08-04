@@ -110,6 +110,14 @@
         width: 13.6rem;
         height: 12.8rem;
       }
+
+      @media (max-width: $mobile) {
+        bottom: -18rem;
+        right: -1.3rem;
+        left: auto;
+        width: 22.7rem;
+        height: 21.6rem;
+      }
     }
   }
 
@@ -390,6 +398,10 @@
     transition: all 0.2s ease-in-out;
     padding: 0;
 
+    .location--red & {
+      display: none;
+    }
+
     svg {
       width: 100%;
 
@@ -403,6 +415,11 @@
 
     @media (max-width: $mobile) {
       top: 0.2rem;
+
+      .location--red & {
+        display: flex;
+      }
+
     }
 
     &.swiper-button-disabled {
@@ -698,15 +715,23 @@
       }
 
       &--prev {
-        top: auto;
-        bottom: 1.3rem;
-        left: calc(50% - 2.5rem);
+        left: 1.6rem;
+
+        @media (max-width: $tablet) {
+          top: auto;
+          bottom: 1.3rem;
+          left: calc(50% - 2.5rem);
+        }
+
       }
 
       &--next {
-        top: auto;
-        bottom: 1.3rem;
-        right: calc(50% - 2.5rem);
+        right: 1.6rem;
+        @media (max-width: $tablet) {
+          top: auto;
+          bottom: 1.3rem;
+          right: calc(50% - 2.5rem);
+        }
       }
     }
   }
