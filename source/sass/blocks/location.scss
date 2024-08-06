@@ -144,7 +144,7 @@
         height: 6.7rem;
         width: calc(100% + 1rem);
         margin-left: -0.5rem;
-        padding: 0 2rem;
+        padding: 0 3rem;
       }
     }
 
@@ -517,10 +517,7 @@
       min-height: 31.3rem;
       border-radius: 30px;
       padding: 2rem 2.6rem 1.5rem 2.2rem;
-
-      &--small {
-        min-height: 23.9rem;
-      }
+      min-height: auto;
     }
 
 

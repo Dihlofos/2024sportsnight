@@ -1,0 +1,359 @@
+.dummy {
+  min-height: 100vh;
+  padding-top: 2.8rem;
+
+  @media (max-width: $tablet) {
+    padding-top: 7rem;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .header__logos {
+    gap: 4.8rem;
+
+    @media (max-width: $tablet) {
+      gap: 3rem;
+    }
+
+    @media (max-width: $mobile) {
+      position: relative;
+      top: 4.7rem;
+      gap: 2.5rem;
+    }
+  }
+
+  .header__logo {
+    @media (max-width: $tablet) {
+      img {
+        height: 3rem;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      img {
+        height: 2.2rem;
+      }
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      top: -0.7rem;
+
+      @media (max-width: $tablet) {
+        img {
+          height: 4rem;
+        }
+      }
+
+      @media (max-width: $mobile) {
+        img {
+          height: 2.5rem;
+        }
+      }
+
+
+    }
+  }
+
+  &__main {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 18rem;
+    margin-top: 11rem;
+    margin-bottom: 0;
+    max-width: 95.7rem;
+
+    @media (max-width: $tablet) {
+      margin-top: 13.67rem;
+      margin-bottom: 21.2rem;
+    }
+
+    @media (max-width: $mobile) {
+      margin-top: 14rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__name {
+    @include pattern(12.7rem);
+    text-align: center;
+
+    @media (max-width: $tablet) {
+      font-size: 7.7rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 4.5rem;
+    }
+  }
+
+  .title {
+    @media (max-width: $tablet) {
+      min-width: 39.3rem;
+      margin: 0 0 7.9rem;
+    }
+
+    @media (max-width: $mobile) {
+      min-width: 26.9rem;
+      margin: 0 0 4.4rem;
+    }
+
+  }
+
+  &__decor {
+    position: absolute;
+
+    &--mobile-circle {
+      display: none;
+
+      @media (max-width: $mobile) {
+        display: block;
+        width: 2.8rem;
+        height: 2.8rem;
+        top: -4.6rem;
+        right: 2.5rem;
+      }
+    }
+
+    &--left-top {
+      top: 3.2rem;
+      right: -18rem;
+
+      @media (max-width: $tablet) {
+        width: 6.7rem;
+        height: 6.7rem;
+        top: -7.5rem;
+        left: 9.2rem;
+      }
+
+      @media (max-width: $mobile) {
+        width: 4.1rem;
+        height: 3.9rem;
+        top: -5.4rem;
+        left: 4.5rem;
+      }
+
+    }
+
+    &--right-top {
+      top: -16.9rem;
+      right: -12.3rem;
+
+      @media (max-width: $tablet) {
+        width: 11.2rem;
+        height: 6.9rem;
+        top: -17.5rem;
+        right: -1.3rem;
+      }
+
+      @media (max-width: $mobile) {
+        width: 8.6rem;
+        height: 5.4rem;
+        top: -12rem;
+        right: -1rem;
+      }
+    }
+
+    &--left-bottom {
+      bottom: -10rem;
+      left: -28rem;
+      width: 28.9rem;
+      height: 27.5rem;
+
+      @media (max-width: $tablet) {
+        width: 24.2rem;
+        height: 23.2rem;
+        bottom: -2rem;
+        left: -5.3rem;
+      }
+
+      @media (max-width: $mobile) {
+        width: 14rem;
+        height: 13.4rem;
+        bottom: 4.5rem;
+        left: -3rem;
+      }
+    }
+
+    &--bottom {
+      top: 0.8rem;
+      left: -16rem;
+
+      @media (max-width: $tablet) {
+        width: 9.9rem;
+        height: 6.7rem;
+        top: 43.3rem;
+        left: 22.9rem;
+        bottom: auto;
+      }
+
+      @media (max-width: $mobile) {
+        left: 11rem;
+        top: 26.5rem;
+        width: 5.6rem;
+        height: 3.8rem;
+      }
+    }
+
+    &--right-bottom {
+      bottom: -13.9rem;
+      right: -27.9rem;
+      width: 27.0rem;
+      height: 27.8rem;
+
+      @media (max-width: $tablet) {
+        width: 27.5rem;
+        height: 28.3rem;
+        bottom: -17.6rem;
+        right: -7.5rem;
+      }
+
+      @media (max-width: $mobile) {
+        width: 11.9rem;
+        height: 12.5rem;
+        bottom: -0.3rem;
+        right: -3.4rem;
+      }
+    }
+
+    &--about-left-top {
+      top: -13.5rem;
+      left: 5.7rem;
+
+      @media (max-width: $tablet) {
+        width: 2.8rem;
+        height: 2.8rem;
+        top: -64.1rem;
+        right: 6.1rem;
+        left: auto
+      }
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+
+    &--about-left-bottom {
+      bottom: 0;
+      right: -5.8rem;
+      width: 12.2rem;
+      height: 13.2rem;
+
+      @media (max-width: $tablet) {
+        width: 11.6rem;
+        height: 12.6rem;
+        bottom: 14px;
+        left: 4.5rem;
+
+      }
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+
+    &--about-right-bottom {
+      top: -24.4rem;
+      left: 45.4rem;
+      width: 20rem;
+      height: 17.7rem;
+
+      @media (max-width: $tablet) {
+        width: 20rem;
+        height: 17.7rem;
+        top: -29rem;
+        left: 34rem;
+        right: auto;
+      }
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+  }
+
+  &__date-time {
+    position: absolute;
+    right: 7.9rem;
+    bottom: 7.8rem;
+
+    @media (max-width: $tablet) {
+      width: 24rem;
+      height: 10.8rem;
+      right: 10.5rem;
+      bottom: 12rem;
+    }
+
+    @media (max-width: $mobile) {
+      width: 18.5rem;
+      height: 8.3rem;
+      right: 1.2rem;
+      bottom: 13rem;
+    }
+  }
+
+  &__title {
+    font-family: $pattern;
+    font-size: 12.7rem;
+    color: $white;
+    line-height: 96%;
+    font-weight: 500;
+  }
+
+  &__about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 86.1rem;
+    margin: 0 auto;
+    padding-bottom: 12.3rem;
+
+    @media (max-width: $tablet) {
+      padding-bottom: 19.3rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding:0;
+
+    }
+  }
+
+  &__text {
+    font-size: 2.5rem;
+    line-height: 1.01;
+    max-width: 70rem;
+    text-align: center;
+    font-weight: 400;
+    color: #EBEBEB;
+
+    p {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin: 0 0 3rem;
+      }
+    }
+
+    a {
+      color: #EBEBEB;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 1.7rem;
+      max-width: 50rem;
+
+      p {
+        &:not(:last-child) {
+          margin: 0 0 3.5rem;
+        }
+      }
+    }
+  }
+
+
+}
