@@ -470,6 +470,16 @@
     align-items: flex-start;
     gap: 3.3rem;
 
+    &--grid {
+      .location__map {
+        display: none;
+
+        @media (max-width: $mobile) {
+          display: block;
+        }
+      }
+    }
+
 
 
     .location--orange & {
@@ -482,11 +492,19 @@
 
     @media (max-width: $tablet) {
       padding: 4.7rem 1.5rem 3.8rem;
+
+      .location--orange & {
+        padding: 4.7rem 1.5rem 3.8rem;
+      }
     }
 
     @media (max-width: $mobile) {
       flex-direction: column-reverse;
       padding: 5.2rem 1.5rem 5.6rem;
+
+      .location--orange & {
+        padding: 5.2rem 1.5rem 15rem;
+      }
     }
   }
 
@@ -507,6 +525,17 @@
 
     @media (max-width: $tablet) {
       gap: 2.8rem;
+    }
+
+    @media (max-width: $mobile) {
+      &--grid {
+        grid-template-columns: 1fr;
+
+        .location__map {
+          display: none;
+        }
+      }
+
     }
   }
 
@@ -689,6 +718,8 @@
       width: 21.5rem;
       height: 19.8rem;
       border-radius: 1.9rem;
+
+
     }
 
     @media (max-width: $mobile) {
@@ -696,6 +727,11 @@
       margin: 0 0 6.1rem;
       border-radius: 33px;
       height: 31.3rem;
+
+      .location--orange & {
+        width: 100%;
+        margin: 0;
+      }
     }
   }
 
