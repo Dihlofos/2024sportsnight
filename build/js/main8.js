@@ -152,7 +152,7 @@
     });
 
     new Swiper(`.js-location-content-${name}`, {
-      spaceBetween: 10,
+      spaceBetween: 20000,
       slidesPerView: 1,
       draggable: false,
       allowTouchMove: false,
