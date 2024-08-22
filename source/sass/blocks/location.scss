@@ -474,6 +474,12 @@
   &__partner {
     margin-left: 6rem;
     margin-bottom: 6rem;
+
+    @media (max-width: $tablet) {
+      margin-left: 2rem;
+      margin-bottom: 6rem;
+      max-width: 85%;
+    }
   }
 
   &__content {
