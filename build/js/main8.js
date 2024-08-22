@@ -145,7 +145,7 @@
     const swiper = new Swiper(`.js-location-thumbs-${name}`, {
       spaceBetween: thumbsMargin,
       slidesPerView: "auto",
-      freeMode: true,
+      freeMode: false,
       speed: 300,
       watchSlidesProgress: true,
       slideToClickedSlide: true,

@@ -207,6 +207,7 @@
     }
 
     @media (max-width: $mobile) {
+      flex-direction: column;
       gap: 3.2rem;
       margin-top: 3.9rem;
     }

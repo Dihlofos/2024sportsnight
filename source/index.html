@@ -288,10 +288,10 @@
                     <img width="25" height="29" src="img/decor/icon-mini-flower.svg">
                     <span>спортивные объекты</span>
                   </a>
-                  <a href="#centers" class="schedule__link schedule__link--centers js-scroll" data-scroll>
+                  <!-- <a href="#centers" class="schedule__link schedule__link--centers js-scroll" data-scroll>
                     <img width="25" height="29" src="img/decor/icon-mini-flower.svg">
                     <span>культурно-досуговые центры</span>
-                  </a>
+                  </a> -->
                   <a href="#city" class="schedule__link schedule__link--city js-scroll" data-scroll>
                     <img width="25" height="29" src="img/decor/icon-mini-flower.svg">
                     <span>городская среда</span>
@@ -604,8 +604,8 @@
                   <div class="swiper-wrapper">
                     <!-- Лужники -->
                     <div class="swiper-slide location__slides">
-                      <div class="location__content">
-                        <div class="location__cards">
+                      <div class="location__content location__content--grid">
+                        <div class="location__cards location__cards--grid">
                           <div class="location__card">
                             <div class="location__card-header">
                               <div class="location__card-name">Иммерсивная экскурсия на самокатах</div>
@@ -617,7 +617,7 @@
                             <div class="location__card-footer">
                               <div class="locations__block-link dropdown js-dropdown">
                                 <button class="dropdown__trigger js-dropdown-trigger button button--red">
-                                  Время сеансов
+                                  Выбрать сеанс
                                   <svg class="js-dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M7.71109 0.672999V14.0951M7.71109 14.0951L14.4221 7.38403M7.71109 14.0951L1.00005 7.38403" stroke="white" stroke-width="1.96924"/>
                                   </svg>
@@ -646,15 +646,18 @@
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Кубок Москомспорта по пляжному футболу среди студентов</div>
+                              <div class="location__card-name">Кубок Москомспорта по пляжному футболу</div>
                               <div class="location__card-time">19:00 — 22:00</div>
                             </div>
                             <div class="location__card-description">
-                              <p></p>
+                              <p>Соревнования среди студентов.</p>
                             </div>
                             <div class="location__card-footer">
                               <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
+                          </div>
+                          <div class="location__map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7b428f2d38414b17f9b757fc1fb3761c916842660ff9b6fdfd33b8bd1334af3&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
@@ -680,7 +683,7 @@
                         <div class="location__cards">
                           <div class="location__card">
                             <div class="location__card-header">
-                              <div class="location__card-name">Экскурсия по арене</div>
+                              <div class="location__card-name">Экскурсия по&nbsp;арене</div>
                               <div class="location__card-time">20:00 — 22:50</div>
                             </div>
                             <div class="location__card-description">
@@ -689,7 +692,7 @@
                             <div class="location__card-footer">
                               <div class="locations__block-link dropdown js-dropdown">
                                 <button class="dropdown__trigger js-dropdown-trigger button button--red">
-                                  Время сеансов
+                                  Выбрать сеанс
                                   <svg class="js-dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M7.71109 0.672999V14.0951M7.71109 14.0951L14.4221 7.38403M7.71109 14.0951L1.00005 7.38403" stroke="white" stroke-width="1.96924"/>
                                   </svg>
@@ -743,17 +746,17 @@
                         <div class="location__cards">
                           <div class="location__card">
                             <div class="location__card-header">
-                              <div class="location__card-name">Экскурсия по арене</div>
+                              <div class="location__card-name">Экскурсия по&nbsp;арене</div>
                               <div class="location__card-time">20:00 — 22:50</div>
                             </div>
                             <div class="location__card-description">
                               <p>Погрузитесь в&nbsp;атмосферу и&nbsp;загляните во&nbsp;все уголки крупнейшего спортивного объекта.</p>
-                              <p>Уличная экскурсия с&nbsp;погружением в&nbsp;историю стадиона&nbsp;&mdash; военная история, формирование клуба ПФК ЦСКА, выход на&nbsp;большую арена с&nbsp;просмотром небольшого фильма</p>
+                              <p>Уличная экскурсия с&nbsp;погружением в&nbsp;историю стадиона&nbsp;&mdash; военная история, формирование клуба ПФК ЦСКА, выход на&nbsp;большую арена с&nbsp;просмотром небольшого фильма.</p>
                             </div>
                             <div class="location__card-footer">
                               <div class="locations__block-link dropdown js-dropdown">
                                 <button class="dropdown__trigger js-dropdown-trigger button button--red">
-                                  Время сеансов
+                                  Выбрать сеанс
                                   <svg class="js-dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M7.71109 0.672999V14.0951M7.71109 14.0951L14.4221 7.38403M7.71109 14.0951L1.00005 7.38403" stroke="white" stroke-width="1.96924"/>
                                   </svg>
@@ -781,7 +784,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="location__map">
+                        <div class="location__map location__map--auto">
                           <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A47e34669b1001b50ae71ce31ebdd05853cfe7e34e54caa6b57044bbfc03e768b&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
                         </div>
                       </div>
@@ -827,59 +830,30 @@
                 <div class="swiper  location__content-slider js-location-content-city">
                   <div class="swiper-wrapper">
                     <!-- Патриарши пруды -->
-                    <div class="swiper-slide location__slide">
+                    <div class="swiper-slide location__slide location__slide--two-columns">
                       <div class="location__content">
                         <div class="location__cards">
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Фан-встреча<br/> Рой Джонс</div>
-                              <div class="location__card-time">20:00</div>
+                              <div class="location__card-name">Фан-встреча<br/></div>
+                              <div class="location__card-time">20:00 — 22:15</div>
                             </div>
                             <div class="location__card-description">
                               <p>Уникальная возможность встретиться и&nbsp;пообщаться со&nbsp;своими кумирами из&nbsp;мира спорта. Не&nbsp;пропустите!</p>
-                            </div>
-                            <div class="location__card-footer">
-                              <a class="location__link button button--green location__link--free">Вход свободный</a>
-                            </div>
-                          </div>
-                          <div class="location__card location__card--small">
-                            <div class="location__card-header">
-                              <div class="location__card-name">Фан-встреча<br/> Александра Трусова</div>
-                              <div class="location__card-time">20:45</div>
-                            </div>
-                            <div class="location__card-description">
-                              <p>Уникальная возможность встретиться и&nbsp;пообщаться со&nbsp;своими кумирами из&nbsp;мира спорта. Не&nbsp;пропустите!</p>
-                            </div>
-                            <div class="location__card-footer">
-                              <a class="location__link button button--green location__link--free">Вход свободный</a>
-                            </div>
-                          </div>
-                          <div class="location__card location__card--small">
-                            <div class="location__card-header">
-                              <div class="location__card-name">Фан-встреча<br/> Дина и Арина Аверины</div>
-                              <div class="location__card-time">21:30</div>
-                            </div>
-                            <div class="location__card-description">
-                              <p>Уникальная возможность встретиться и&nbsp;пообщаться со&nbsp;своими кумирами из&nbsp;мира спорта. Не&nbsp;пропустите!</p>
-                            </div>
-                            <div class="location__card-footer">
-                              <a class="location__link button button--green location__link--free">Вход свободный</a>
-                            </div>
-                          </div>
-                          <div class="location__card location__card--small">
-                            <div class="location__card-header">
-                              <div class="location__card-name">Фан-встреча<br/> Алина Загитова</div>
-                              <div class="location__card-time">22:15</div>
-                            </div>
-                            <div class="location__card-description">
-                              <p>Уникальная возможность встретиться и&nbsp;пообщаться со&nbsp;своими кумирами из&nbsp;мира спорта. Не&nbsp;пропустите!</p>
+                              <span>Расписание:</span><br>
+                              <ul>
+                                <li>Рой Джонс - <b>20:00</b></li>
+                                <li>Александра Трусова - <b>20:45</b></li>
+                                <li>Дина и Арина Аверины - <b>21:30</b></li>
+                                <li>Алина Загитова - <b>22:15</b></li>
+                              </ul>
                             </div>
                             <div class="location__card-footer">
                               <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                         </div>
-                        <div class="location__map">
+                        <div class="location__map location__map--auto">
                           <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1f5e80ce1f83ecd5fb14df46ad0e646ab4a6392510168de84823c9abc4fd21cb&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
                         </div>
                       </div>
@@ -896,8 +870,9 @@
                               <div class="location__star-image">
                                 <img class="" width="196" height="196" src="img/stars/jones.png">
                               </div>
-                              <div class="location__star-name">Рой Джонс</div>
+                              <div class="location__star-name">Рой<br>Джонс</div>
                               <div class="location__star-descr">Боксер</div>
+                              <div class="location__star-descr">20:00</div>
                             </div>
                             <div class="swiper-slide location__star">
                               <div class="location__star-image">
@@ -905,6 +880,7 @@
                               </div>
                               <div class="location__star-name">Александра Трусова</div>
                               <div class="location__star-descr">Фигуристка</div>
+                              <div class="location__star-descr">20:45</div>
                             </div>
                             <div class="swiper-slide location__star">
                               <div class="location__star-image">
@@ -912,6 +888,7 @@
                               </div>
                               <div class="location__star-name">Дина и Арина Аверины</div>
                               <div class="location__star-descr">Фигуристки</div>
+                              <div class="location__star-descr">21:30</div>
                             </div>
                             <div class="swiper-slide location__star">
                               <div class="location__star-image">
@@ -919,6 +896,7 @@
                               </div>
                               <div class="location__star-name">Алина Загитова</div>
                               <div class="location__star-descr">Фигуристка</div>
+                              <div class="location__star-descr">22:15</div>
                             </div>
                           </div>
                         </div>
@@ -936,11 +914,11 @@
                         <div class="location__cards">
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Настольный теннис</div>
-                              <div class="location__card-time">20:00</div>
+                              <div class="location__card-name">Турниры по&nbsp;настольному теннису</div>
+                              <div class="location__card-time">20:00 — 23:00</div>
                             </div>
                             <div class="location__card-description">
-                              <p>Настольный теннис 30 столов. Категория - дети</p>
+                              <p>Хорошо играете в настольный теннис? Покажите всё, на что способны на турнире!</p>
                             </div>
                             <div class="location__card-footer">
                               <a class="location__link button button--green location__link--free">Вход свободный</a>
@@ -948,11 +926,11 @@
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Настольный теннис</div>
-                              <div class="location__card-time">21:00</div>
+                              <div class="location__card-name">Настольный теннис. Открытые занятия</div>
+                              <div class="location__card-time">20:00 — 21:00</div>
                             </div>
                             <div class="location__card-description">
-                              <p>Настольный теннис 30 столов. Категория - подростки</p>
+                              <p>Развивайте внимание и реакцию под руководством тренеров по настольному теннису</p>
                             </div>
                             <div class="location__card-footer">
                               <a class="location__link button button--green location__link--free">Вход свободный</a>
@@ -960,35 +938,11 @@
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Настольный теннис</div>
-                              <div class="location__card-time">23:00</div>
+                              <div class="location__card-name">Настольный теннис. Свободная игра</div>
+                              <div class="location__card-time">20:00 — 23:00</div>
                             </div>
                             <div class="location__card-description">
-                              <p>Настольный теннис 30 столов. Категория - синьоры</p>
-                            </div>
-                            <div class="location__card-footer">
-                              <a class="location__link button button--green location__link--free">Вход свободный</a>
-                            </div>
-                          </div>
-                          <div class="location__card location__card--small">
-                            <div class="location__card-header">
-                              <div class="location__card-name">Открытые занятия</div>
-                              <div class="location__card-time">20:00 - 21:00</div>
-                            </div>
-                            <div class="location__card-description">
-                              <p>Открытые занятия для всех желающих</p>
-                            </div>
-                            <div class="location__card-footer">
-                              <a class="location__link button button--green location__link--free">Вход свободный</a>
-                            </div>
-                          </div>
-                          <div class="location__card location__card--small">
-                            <div class="location__card-header">
-                              <div class="location__card-name">Свободная игра</div>
-                              <div class="location__card-time">20:00 - 21:00</div>
-                            </div>
-                            <div class="location__card-description">
-                              <p>Свободная игра для всех желающих</p>
+                              <p>Занимайте стол, приглашайте соперника и играйте с азартом и удовольствием</p>
                             </div>
                             <div class="location__card-footer">
                               <a class="location__link button button--green location__link--free">Вход свободный</a>
@@ -1008,12 +962,14 @@
                         </button>
                         <div class="swiper js-stars">
                           <div class="swiper-wrapper location__stars-list">
-                            <div class="swiper-slide location__star">
-                              <div class="location__star-image">
-                                <img class="" width="196" height="196" src="img/stars/fonbet.png">
+                            <a href="https://fon.bet/" target="_blank">
+                              <div class="swiper-slide location__star">
+                                <div class="location__star-image">
+                                  <img class="" width="196" height="196" src="img/stars/fonbet.png">
+                                </div>
+                                <div class="location__star-name">Фонбет</div>
                               </div>
-                              <div class="location__star-name">Фонбет</div>
-                            </div>
+                            </a>
                           </div>
                         </div>
                         <button class="location__arrow location__arrow--next js-stars-next">
@@ -1033,12 +989,12 @@
                               <div class="location__card-time">20:00 — 23:05</div>
                             </div>
                             <div class="location__card-description">
-                              <p>Тренировки по&nbsp;сайклингу по&nbsp;хажигательные миксы&nbsp;DJ</p>
+                              <p>Крути педали вместе с&nbsp;профессиональными иснтуркторами под зажигательные музыкальные миксы&nbsp;DJ</p>
                             </div>
                             <div class="location__card-footer">
                               <div class="locations__block-link dropdown js-dropdown">
                                 <button class="dropdown__trigger js-dropdown-trigger button button--red">
-                                  Время сеансов
+                                  Выбрать сеанс
                                   <svg class="js-dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M7.71109 0.672999V14.0951M7.71109 14.0951L14.4221 7.38403M7.71109 14.0951L1.00005 7.38403" stroke="white" stroke-width="1.96924"/>
                                   </svg>
@@ -1090,7 +1046,7 @@
                               <p>Научитесь владеть телом, разучите фирменные движения и найдите свой стиль на мастер-классах от известных танцоров.</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1102,11 +1058,11 @@
                               <p>Примите участие в баттле и покажите, кто тут лучший танцор.</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__map">
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0eca9ee6a121c49adcf28a96f4fad035422f65b35a7972eaeee73f57d071842d&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A29a30ea57771bf11bb0840d81f2ba228bbb4af73bed2de655cc10ed068bf8eb6&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
@@ -1117,7 +1073,7 @@
                               <p>Примите участие в баттле и покажите, кто тут лучший танцор.</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1129,7 +1085,7 @@
                               <p>Примите участие в баттле и покажите, кто тут лучший танцор.</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1141,7 +1097,7 @@
                               <p>Примите участие в баттле и покажите, кто тут лучший танцор.</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1153,7 +1109,7 @@
                               <p>Примите участие в баттле и покажите, кто тут лучший танцор.</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <!-- Битбокс -->
@@ -1166,28 +1122,7 @@
                               <p>Битбоксеры могут заменить целый оркестр, используя только голос и дыхание. Приходите и убедитесь сами</p>
                             </div>
                             <div class="location__card-footer">
-                              <div class="locations__block-link dropdown js-dropdown">
-                                <button class="dropdown__trigger js-dropdown-trigger button button--red">
-                                  Время сеансов
-                                  <svg class="js-dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M7.71109 0.672999V14.0951M7.71109 14.0951L14.4221 7.38403M7.71109 14.0951L1.00005 7.38403" stroke="white" stroke-width="1.96924"/>
-                                  </svg>
-                                </button>
-                                <div class="dropdown__content">
-                                  <ul class="dropdown__list">
-                                    <li class="dropdown__item">
-                                      <a href="#" class="dropdown__link" target="_blank">
-                                        <span>21:00 — 21:20</span>
-                                      </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                      <a href="#" class="dropdown__link" target="_blank">
-                                        <span>22:00 — 22:20</span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1199,7 +1134,7 @@
                               <p></p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1211,7 +1146,7 @@
                               <p>Ритмы, мелодии и особый драйв — лучшие битбоксеры готовы зарядить вас позитивом и энергией.</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1223,7 +1158,7 @@
                               <p>Научитесь создавать мелодию без музыкальных инструментов. Освойте битбокс под руководством настоящих профи.</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <!-- Мотофристайл -->
@@ -1236,9 +1171,9 @@
                               <p>Шоу в исполнении топовых райдеров.</p>
                               <p>Захватывающий вид спорта с затяжными прыжками на мотоцикле с высокого трамплина. Адреналин и экстрим гарантированы!</p>
                             </div>
-                            <!-- <div class="location__card-footer">
+                            <div class="location__card-footer">
                               <a class="location__link button button--green location__link--free">Вход свободный</a>
-                            </div> -->
+                            </div>
                           </div>
                           <!-- Настольный футбол/хоккей -->
                           <div class="location__card location__card--small">
@@ -1249,9 +1184,9 @@
                             <div class="location__card-description">
                               <p>Вас ждут захватывающие матчи, в которых может  принять участие любой желающий</p>
                             </div>
-                            <!-- <div class="location__card-footer">
+                            <div class="location__card-footer">
                               <a class="location__link button button--green location__link--free">Вход свободный</a>
-                            </div> -->
+                            </div>
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
@@ -1261,9 +1196,9 @@
                             <div class="location__card-description">
                               <p>Вас ждут захватывающие матчи, в которых может  принять участие любой желающий</p>
                             </div>
-                            <!-- <div class="location__card-footer">
+                            <div class="location__card-footer">
                               <a class="location__link button button--green location__link--free">Вход свободный</a>
-                            </div> -->
+                            </div>
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
@@ -1291,7 +1226,7 @@
                           </div>
                         </div>
                         <div class="location__map">
-                          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0eca9ee6a121c49adcf28a96f4fad035422f65b35a7972eaeee73f57d071842d&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A29a30ea57771bf11bb0840d81f2ba228bbb4af73bed2de655cc10ed068bf8eb6&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
                         </div>
 
                       </div>
@@ -1310,7 +1245,7 @@
                               <p>22:00 Финал Кубка</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1322,7 +1257,7 @@
                               <p></p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__map">
@@ -1337,7 +1272,7 @@
                               <p>Прокачайте силу, ловкость и выносливость. Или бросьте вызов себе и своему телу. </p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1349,7 +1284,7 @@
                               <p></p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1361,7 +1296,7 @@
                               <p></p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1373,7 +1308,7 @@
                               <p>Известный певец приедет поддержать участников и исполнит 3 песни прямо на ринге</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1385,7 +1320,7 @@
                               <p>Бой: Рой Джонс (призер Олимпийских игр) /  Сергей Карякин (российский шахматист, гроссмейстер):</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1398,33 +1333,7 @@
                               </p>
                             </div>
                             <div class="location__card-footer">
-                              <div class="locations__block-link dropdown js-dropdown">
-                                <button class="dropdown__trigger js-dropdown-trigger button button--red">
-                                  Время сеансов
-                                  <svg class="js-dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M7.71109 0.672999V14.0951M7.71109 14.0951L14.4221 7.38403M7.71109 14.0951L1.00005 7.38403" stroke="white" stroke-width="1.96924"/>
-                                  </svg>
-                                </button>
-                                <div class="dropdown__content">
-                                  <ul class="dropdown__list">
-                                    <li class="dropdown__item">
-                                      <a href="#" class="dropdown__link" target="_blank">
-                                        <span>20:00 — 20:15</span>
-                                      </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                      <a href="#" class="dropdown__link" target="_blank">
-                                        <span>21:00 — 21:15</span>
-                                      </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                      <a href="#" class="dropdown__link" target="_blank">
-                                        <span>22:15 — 22:15</span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
@@ -1437,33 +1346,7 @@
                               </p>
                             </div>
                             <div class="location__card-footer">
-                              <div class="locations__block-link dropdown js-dropdown">
-                                <button class="dropdown__trigger js-dropdown-trigger button button--red">
-                                  Время сеансов
-                                  <svg class="js-dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M7.71109 0.672999V14.0951M7.71109 14.0951L14.4221 7.38403M7.71109 14.0951L1.00005 7.38403" stroke="white" stroke-width="1.96924"/>
-                                  </svg>
-                                </button>
-                                <div class="dropdown__content">
-                                  <ul class="dropdown__list">
-                                    <li class="dropdown__item">
-                                      <a href="#" class="dropdown__link" target="_blank">
-                                        <span>20:15 — 21:00</span>
-                                      </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                      <a href="#" class="dropdown__link" target="_blank">
-                                        <span>21:15 — 22:00</span>
-                                      </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                      <a href="#" class="dropdown__link" target="_blank">
-                                        <span>22:15 — 23:00</span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                         </div>
@@ -1484,7 +1367,7 @@
                               <div class="location__star-image">
                                 <img class="" width="196" height="196" src="img/stars/jones.png">
                               </div>
-                              <div class="location__star-name">Рой Джонс</div>
+                              <div class="location__star-name">Рой<br>Джонс</div>
                               <div class="location__star-descr">Боксер</div>
                             </div>
                             <div class="swiper-slide location__star">
@@ -1516,19 +1399,19 @@
                         <div class="location__cards">
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Мк с Сергеем Карякины</div>
+                              <div class="location__card-name">Мастер-класс по шахматам от Сергея Карякина</div>
                               <div class="location__card-time">20:00 — 21:00</div>
                             </div>
                             <div class="location__card-description">
                               <p>Познакомьтесь с тонкостями шахматной стратегии из первых уст и узнайте секреты игры от знаменитого гроссмейстера и чемпиона мира.</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Свободная игра</div>
+                              <div class="location__card-name location__card-name--3">Шахматы. Свободная игра</div>
                               <div class="location__card-time">20:00 — 23:00</div>
                             </div>
                             <div class="location__card-description">
@@ -1540,14 +1423,14 @@
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Любительский турнир</div>
+                              <div class="location__card-name">Любительский турнир по шахматам</div>
                               <div class="location__card-time">20:30 — 23:00</div>
                             </div>
                             <div class="location__card-description">
                               <p>Любите интеллектуальные поединки и считаете, что лучшее поле битвы — шахматное? Присоединяйтесь, чтобы насладиться изысканной игрой в компании единомышленников</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                         </div>
@@ -1586,11 +1469,11 @@
                         <div class="location__cards">
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Фехтование: показательные поединки</div>
+                              <div class="location__card-name">Фехтование. Показательные поединки</div>
                               <div class="location__card-time">20:00 — 21:00</div>
                             </div>
                             <div class="location__card-description">
-                              <p>Фехтование - олимпийский вид спорта, суть которого это ведение боя на ограниченном пространстве с применением рапиры.</p>
+                              <p>Фехтование — олимпийский вид спорта, суть которого вести бой на ограниченном пространстве с применением рапиры. Будет зрелищно!</p>
                               <!-- <p>Главная цель в ходе боя — нанести сопернику определенное количество уколов и не получить их самому.</p> -->
                             </div>
                             <div class="location__card-footer">
@@ -1599,19 +1482,19 @@
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Фехтование: мастер-классы для всех желающих</div>
+                              <div class="location__card-name">Фехтование. Мастер-классы</div>
                               <div class="location__card-time">21:00 — 22:00</div>
                             </div>
                             <div class="location__card-description">
                               <p>Почувствуй себя участником поединков и приобери навык владения рапирой.</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Фехтование: шоу поединки</div>
+                              <div class="location__card-name">Фехтование. Шоу-поединки</div>
                               <div class="location__card-time">22:00 — 23:00</div>
                             </div>
                             <div class="location__card-description">
@@ -1623,7 +1506,7 @@
                           </div>
                         </div>
                         <div class="location__map">
-                          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3ded239eaf304a36bf49bf62fede0d2c2d37ea2e230bca8273b875c861995367&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7390877c7c0b2a1de8672e42e8c5247564af9d93239e70b6c1e1ecf25d04413f&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
                         </div>
                       </div>
                     </div>
@@ -1634,7 +1517,7 @@
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
                               <div class="location__card-name">Фитнес Джампинг</div>
-                              <div class="location__card-time">20:00 — 22:15</div>
+                              <div class="location__card-time">20:00 — 23:00</div>
                             </div>
                             <div class="location__card-description">
                               <p>Кардиотренировка на батуте, который имитирует поверхность воды. Научитесь держать баланс в любых условиях и делать настоящие акробатические элементы.</p>
@@ -1642,7 +1525,7 @@
                             <div class="location__card-footer">
                               <div class="locations__block-link dropdown js-dropdown">
                                 <button class="dropdown__trigger js-dropdown-trigger button button--red">
-                                  Время сеансов
+                                  Выбрать сеанс
                                   <svg class="js-dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M7.71109 0.672999V14.0951M7.71109 14.0951L14.4221 7.38403M7.71109 14.0951L1.00005 7.38403" stroke="white" stroke-width="1.96924"/>
                                   </svg>
@@ -1676,7 +1559,7 @@
                           </div>
                         </div>
                         <div class="location__map">
-                          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A29a30ea57771bf11bb0840d81f2ba228bbb4af73bed2de655cc10ed068bf8eb6&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3577c038edc529f0b2281d1de382ab84fe8f07d794cc5e3bbb32298664e89adb&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
                         </div>
                       </div>
                     </div>
@@ -1686,19 +1569,19 @@
                         <div class="location__cards">
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Стритбаскет: флеш-турниры</div>
+                              <div class="location__card-name">Стритбаскет. Флеш-турниры</div>
                               <div class="location__card-time">20:00 — 21:00</div>
                             </div>
                             <div class="location__card-description">
                               <p>Хотите проверить свою меткость и отработать броски? Добро пожаловать на турнир.</p>
                             </div>
                             <div class="location__card-footer">
-                              <a class="location__link button button--green" href="#">Регистрация</a>
+                              <a class="location__link button button--green location__link--free">Вход свободный</a>
                             </div>
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Стритбаскет: турниры с профессионалами</div>
+                              <div class="location__card-name">Стритбаскет. Турниры с профессионалами</div>
                               <div class="location__card-time">21:00 — 22:00</div>
                             </div>
                             <div class="location__card-description">
@@ -1710,7 +1593,7 @@
                           </div>
                           <div class="location__card location__card--small">
                             <div class="location__card-header">
-                              <div class="location__card-name">Стритбаскет свободная игра</div>
+                              <div class="location__card-name">Стритбаскет. Свободная игра</div>
                               <div class="location__card-time">20:00 — 23:00</div>
                             </div>
                             <div class="location__card-description">
@@ -1722,7 +1605,7 @@
                           </div>
                         </div>
                         <div class="location__map">
-                          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a0610af79b5286555536e94acce82c214adea8f00745e80346ac27a1cc5690e&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3ded239eaf304a36bf49bf62fede0d2c2d37ea2e230bca8273b875c861995367&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
                         </div>
                       </div>
                     </div>
@@ -1771,7 +1654,7 @@
                             <div class="location__card-footer">
                               <div class="locations__block-link dropdown js-dropdown">
                                 <button class="dropdown__trigger js-dropdown-trigger button button--red">
-                                  Время сеансов
+                                  Выбрать сеанс
                                   <svg class="js-dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M7.71109 0.672999V14.0951M7.71109 14.0951L14.4221 7.38403M7.71109 14.0951L1.00005 7.38403" stroke="white" stroke-width="1.96924"/>
                                   </svg>
@@ -1808,7 +1691,7 @@
                             <div class="location__card-footer">
                               <div class="locations__block-link dropdown js-dropdown">
                                 <button class="dropdown__trigger js-dropdown-trigger button button--red">
-                                  Время сеансов
+                                  Выбрать сеанс
                                   <svg class="js-dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M7.71109 0.672999V14.0951M7.71109 14.0951L14.4221 7.38403M7.71109 14.0951L1.00005 7.38403" stroke="white" stroke-width="1.96924"/>
                                   </svg>
@@ -2045,7 +1928,7 @@
                 <div class="faq__item-title">
                   Как принять участие в «Ночи спорта» и сколько это стоит?
                 </div>
-                <div class="faq__item-descr">Для большинства активностей специальный инвентарь не потребуется. Нужен только коврик для тренировки, если собираетесь на стретчинг. Просто приходите в удобной одежде и обуви и не забудьте взять с собой воду.</div>
+                <div class="faq__item-descr">Участие абсолютно бесплатное. Достаточно выбрать активность, которая вам нравится, зарегистрироваться на нее и прийти на площадку.</div>
                 <svg class="faq__arrow" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
                   <circle cx="27.5693" cy="27.5693" r="27.5693" fill="currentColor"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M43.5497 28.7805L27.3884 44.9418L11.2271 28.7805L14.012 25.9956L25.4191 37.4027L25.4191 12.6192L29.3576 12.6192L29.3576 37.4027L40.7648 25.9956L43.5497 28.7805Z" fill="white"/>
@@ -2065,7 +1948,7 @@
                 <div class="faq__item-title">
                   Можно ли переодеться на площадке?
                 </div>
-                <div class="faq__item-descr">Для большинства активностей специальный инвентарь не потребуется. Нужен только коврик для тренировки, если собираетесь на стретчинг. Просто приходите в удобной одежде и обуви и не забудьте взять с собой воду.</div>
+                <div class="faq__item-descr">Мы просим участников фестиваля приходить сразу в удобной одежде для тренировки.</div>
                 <svg class="faq__arrow" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
                   <circle cx="27.5693" cy="27.5693" r="27.5693" fill="currentColor"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M43.5497 28.7805L27.3884 44.9418L11.2271 28.7805L14.012 25.9956L25.4191 37.4027L25.4191 12.6192L29.3576 12.6192L29.3576 37.4027L40.7648 25.9956L43.5497 28.7805Z" fill="white"/>
@@ -2075,7 +1958,7 @@
                 <div class="faq__item-title">
                   Сколько активностей я могу посетить?
                 </div>
-                <div class="faq__item-descr">Для большинства активностей специальный инвентарь не потребуется. Нужен только коврик для тренировки, если собираетесь на стретчинг. Просто приходите в удобной одежде и обуви и не забудьте взять с собой воду.</div>
+                <div class="faq__item-descr">Вы можете выбрать и посетить любое количество активностей фестиваля.</div>
                 <svg class="faq__arrow" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
                   <circle cx="27.5693" cy="27.5693" r="27.5693" fill="currentColor"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M43.5497 28.7805L27.3884 44.9418L11.2271 28.7805L14.012 25.9956L25.4191 37.4027L25.4191 12.6192L29.3576 12.6192L29.3576 37.4027L40.7648 25.9956L43.5497 28.7805Z" fill="white"/>
@@ -2085,7 +1968,7 @@
                 <div class="faq__item-title">
                   Будут ли на фестивале активности для детей?
                 </div>
-                <div class="faq__item-descr">Для большинства активностей специальный инвентарь не потребуется. Нужен только коврик для тренировки, если собираетесь на стретчинг. Просто приходите в удобной одежде и обуви и не забудьте взять с собой воду.</div>
+                <div class="faq__item-descr">Все спортивные активности и тренировки рассчитаны на взрослых людей от 18 лет. </div>
                 <svg class="faq__arrow" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
                   <circle cx="27.5693" cy="27.5693" r="27.5693" fill="currentColor"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M43.5497 28.7805L27.3884 44.9418L11.2271 28.7805L14.012 25.9956L25.4191 37.4027L25.4191 12.6192L29.3576 12.6192L29.3576 37.4027L40.7648 25.9956L43.5497 28.7805Z" fill="white"/>
@@ -2095,7 +1978,7 @@
                 <div class="faq__item-title">
                   Какой уровень физической подготовки нужен, чтобы принять участие в тренировках?
                 </div>
-                <div class="faq__item-descr">Для большинства активностей специальный инвентарь не потребуется. Нужен только коврик для тренировки, если собираетесь на стретчинг. Просто приходите в удобной одежде и обуви и не забудьте взять с собой воду.</div>
+                <div class="faq__item-descr">Тренировки универсальны и безопасны — они подходят как для подготовленных спортсменов, так и для новичков.</div>
                 <svg class="faq__arrow" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
                   <circle cx="27.5693" cy="27.5693" r="27.5693" fill="currentColor"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M43.5497 28.7805L27.3884 44.9418L11.2271 28.7805L14.012 25.9956L25.4191 37.4027L25.4191 12.6192L29.3576 12.6192L29.3576 37.4027L40.7648 25.9956L43.5497 28.7805Z" fill="white"/>
@@ -2130,11 +2013,11 @@
                     <div class="footer__emails">
                       <div class="footer__email">
                         <h6>Для аккредитации СМИ</h6>
-                        <a href="mailto:Msk@mail.ru">Msk@mail.ru</a>
+                        <a href="mailto:press@moscow.sport">press@moscow.sport</a>
                       </div>
                       <div class="footer__email">
                         <h6>По вопросам регистрации</h6>
-                        <a href="mailto:Msk@mail.ru">Msk@mail.ru</a>
+                        <a href="mailto:ano@mossport.ru">ano@mossport.ru</a>
                       </div>
                     </div>
                   </div>

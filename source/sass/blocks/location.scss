@@ -516,6 +516,11 @@
 
       .location__map {
         display: block;
+        min-height: 31.3rem;
+
+        @media (max-width: $tablet) {
+          min-height: auto;
+        }
       }
 
       .location__card,
@@ -594,6 +599,9 @@
   }
 
   &__stars-list {
+    a {
+      text-decoration: none;
+    }
     .swiper-slide {
       height: auto !important;
     }
@@ -633,7 +641,11 @@
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.2;
-    margin: 0 0 2.4rem;
+
+    ul {
+      margin: 0;
+      padding-left: 2rem;
+    }
 
     @media (max-width: $tablet) {
       font-size: .9rem;
@@ -664,8 +676,17 @@
   }
 
   &__card-name {
+    min-height: 3.5rem;
     @include pattern(2.3rem);
     line-height: 1.1;
+
+    &--3 {
+      min-height: 7.6rem;
+    }
+
+    &--4 {
+      min-height: 10rem;
+    }
 
     @media (max-width: $tablet) {
       font-size: 1.5rem;
@@ -728,6 +749,10 @@
     border-radius: 30px;
     overflow: hidden;
 
+    &--auto {
+      height: auto;
+    }
+
     .location__slide--two-columns & {
       width: auto;
       flex-grow: 9;
@@ -746,6 +771,10 @@
       margin: 0 0 6.1rem;
       border-radius: 33px;
       height: 31.3rem;
+
+      .location__slide--two-columns & {
+        width: 100%;
+      }
 
       .location--orange & {
         width: 100%;
@@ -873,6 +902,7 @@
     @include pattern(2.4rem);
     text-align: center;
     margin: 0 0 0.3rem;
+    text-decoration: none;
 
     @media (max-width: $tablet) {
       font-size: 1.5rem;
@@ -885,6 +915,7 @@
     font-size: 1.9rem;
     font-weight: 600;
     text-align: center;
+    margin: 0 0 1rem;
 
     @media (max-width: $tablet) {
       font-size: 1.2rem;
