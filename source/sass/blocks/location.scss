@@ -403,14 +403,6 @@
     transition: all 0.2s ease-in-out;
     padding: 0;
 
-    .location--orange & {
-      display: none;
-
-      @media (max-width: $mobile) {
-        display: block;
-      }
-    }
-
     svg {
       width: 100%;
 
