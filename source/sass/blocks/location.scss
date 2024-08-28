@@ -650,6 +650,15 @@
       padding-left: 2rem;
     }
 
+    a {
+      text-decoration: none;
+      color: $pink;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
     @media (max-width: $tablet) {
       font-size: .9rem;
       margin: 0 0 1.4rem;
