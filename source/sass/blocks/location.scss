@@ -825,6 +825,7 @@
 
       &.swiper-slide-active {
         height: auto;
+        overflow: visible !important;
       }
     }
 
